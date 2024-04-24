@@ -1,0 +1,136 @@
+README: zebu fifo lab with DPI: April 2023
+
+## Make sure your enviroment is setup properly
+
+
+######## LIST OF FILES MODIFIED FOR DPI #########
+
+1.stb/fifo_usage_spy.sv (modified)
+2.stb/bind_spy.sv  (modified)
+3.zebu/run/libDPI/dpicalls.cc (modified)
+
+
+1. stb/fifo_usage_spy.sv
+
+## Add below code to this file and comment out rest of the things in this file.
+
+module fifo_usage_spy #(
+  parameter WIDTH=5,
+  parameter DEPTH=32
+)(
+  input  clk,
+  input  rstn,
+  input hff_o,
+ input ff_o,
+ input ef_o,
+ input we,
+ input re,
+ input [WIDTH-1:0] datain,
+ input [WIDTH-1:0] dataout
+);
+
+
+  import "DPI-C" context function void fifo_usage_spy_notify (input bit we,
+    input bit re, input bit hff_o, input bit ff_o, input bit ef_o,
+    input bit[WIDTH-1 : 0 ] datain, input bit[WIDTH-1:0]dataout
+);
+always @(posedge clk or negedge rstn)
+    if (rstn)
+         if(we || re)
+           fifo_usage_spy_notify(we,re,hff_o,ff_o,ef_o,datain,dataout);
+endmodule
+
+
+2. stb/bind_spy.sv
+
+## Add below code to this file and comment out rest of the things in this file.
+
+bind top.u_dut.u_fifo fifo_usage_spy #(.WIDTH( WIDTH ), .DEPTH(DEPTH)) u_fifo_usage_spy (
+  .clk    ( wclk_i   ),
+  .rstn   ( rstn_i   ),
+    .hff_o(hff_o),
+    .ff_o(ff_o),
+   .ef_o(ef_o),
+   .we(we),
+   .re(re),
+  .datain(d_i),
+ .dataout(q_o)
+);
+
+
+###### COMPILE ######
+
+
+# Launch zCui from ZeBu_BasicLabs/zebu/ 
+	Launch in GUI mode: zCui -u src/project.utf -w zcui.work.DPI (In zcui.work.DPI directory we can find all the compile time logs. I used zcui.work.DPI but if you
+	don't specify the directory, default will be zcui.work dir)
+	Click Make Target
+	Select full compilation
+	Click OK
+	
+	
+###### BEFORE RUNTIME #######	
+
+
+3.zebu/run/libDPI/dpicalls.cc  (comment out everything in this file and use this below code)
+
+
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <fstream>
+//#include "Collect.hh"
+
+
+FILE *fin = fopen("datain.txt", "w");
+FILE *fout = fopen("dataout.txt", "w");
+
+
+extern "C" void fifo_usage_spy_notify (const svBit we, const svBit re, const svBit hff_o, const svBit ff_o, const svBit ef_o, const svBitVecVal* datain, const svBitVecVal* dataout)
+{
+
+  svScope scope = svGetScope ();
+  printf("call form scope = %s: \n",svGetNameFromScope(scope));
+if(we) fprintf(fin,"%x\n",*dataout);
+
+ 
+
+if(re) fprintf(fout,"%x\n",*datain);
+if(!(re || we))
+{
+fclose(fin);
+fclose(fout);
+}
+}
+
+
+Now to create .so file use this below command: 
+
+g++ -I$ZEBU_ROOT/include run/libDPI/dpicalls.cc -L$ZEBU_ROOT/lib -lZebu -shared -rdynamic -fPIC -o libDPI.so
+			
+####### RUNTIME #######	
+
+### Check your runtime environment is correct
+	1. check you have compiled your design for the right ZeBu Server system(HW Config file) 
+	2. check you are connected on the host PC connected to the right ZeBu Server system
+	
+	For example: Path to $ZEBU_WORK should be set to: <your path to>/ZeBu_BasicLabs/zebu/zcui.work.DPI/zebu.work
+	            	If not set then do this: setenv ZEBU_WORK <your path to>/ZeBu_BasicLabs/zebu/zcui.work.DPI/zebu.work
+			Then to check if it is set, Do: echo $ZEBU_WORK and this should show the above path
+	
+### All of the runtime commands are launched from ZeBu_BasicLabs/zebu/run/run_directory/
+
+
+### Launching zRci with zRci_script.tcl
+		
+		1. Go on the emulator from /run/run_directory/
+			For example we used this:  rems --zebu.work=$ZEBU_WORK
+			
+		2. Launch this command: zRci -zebu-work ../../zcui.work/zebu.work/ ../script/zRci_script.tcl
+
+
+### Output files created ###
+
+run_directory/datain.txt
+run_directory/dataout.txt
+

@@ -1,0 +1,20 @@
+Module fifo_0000{
+}
+Module clkg{
+}
+Module fifo_usage_spy{
+}
+
+EdfPortBounds fifo_usage_spy{
+7 0 datain
+7 0 dataout
+}
+NonAliasNets fifo_0000{
+ra[2]    f   137
+ra[1]    f   138
+ra[0]    f   139
+w_rag[2]    f   140
+wa[2]    f   143
+wa[1]    f   144
+wa[0]    f   145
+}

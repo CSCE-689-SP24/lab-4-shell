@@ -1,0 +1,16 @@
+Title: Building Compilation File Structure...
+Building Compilation File Structure OK
+Title: UTF Translator Fetch...
+UTF Translator found 
+Error     while executing
+"source {./src/settings.utf}"
+    (file "project.utf" line 14)
+Error Error-[UTF_CNOUF] Cannot open UTF file
+  Cannot open UTF script file './src/settings.utf' for reading.
+  Please make sure this file exists in the location where design compilation 
+  is run.
+Error Error-[UTF_IOPTVF] Invalid UTF file option value
+  Invalid file option value in UTF command: 'script src/vcs_cmd.sh'. File does
+  not exist!Please check file existence and recompile.Error: Parsing failed. File: project.utf Line: 14
+Error Error: Parsing of Unified Configuration failed
+

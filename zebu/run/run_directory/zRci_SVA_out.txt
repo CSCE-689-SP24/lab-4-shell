@@ -1,0 +1,16 @@
+
+The directory ./runtime_output has been deleted.
+
+#############################################
+# Forcing signals: ( wr : 30 % , rd : 30 % )
+# Resetting design during 10 clock cycles
+# Running 1000 cycles
+# Number of errors detected:
+# on input : 32'd16
+# on output: 32'd0
+# Storing ram memory content to memdump.hex file
+#############################################
+##### Collect : ###############################
+##### Collect :   Statistics Summary
+
+##### Collect : ###############################

@@ -1,0 +1,40 @@
+Phase 4.1.1.2 Replication
+INFO: [Place 46-19] Post Replication Timing Summary WNS=2.908. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Replication | Checksum: b516c45d
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:45 . Memory (MB): peak = 3663.844 ; gain = 339.938 ; free physical = 173731 ; free virtual = 184905
+Phase 4.1.1 Post Placement Optimization | Checksum: b516c45d
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:45 . Memory (MB): peak = 3663.844 ; gain = 339.938 ; free physical = 173734 ; free virtual = 184909
+Phase 4.1 Post Commit Optimization | Checksum: b516c45d
+
+Time (s): cpu = 00:01:08 ; elapsed = 00:00:45 . Memory (MB): peak = 3663.844 ; gain = 339.938 ; free physical = 173734 ; free virtual = 184909
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: b516c45d
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:45 . Memory (MB): peak = 3663.844 ; gain = 339.938 ; free physical = 173769 ; free virtual = 184943
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: b516c45d
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:46 . Memory (MB): peak = 3663.844 ; gain = 339.938 ; free physical = 173769 ; free virtual = 184943
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3663.844 ; gain = 0.000 ; free physical = 173768 ; free virtual = 184942
+Phase 4.4 Final Placement Cleanup | Checksum: 737b4c56
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:46 . Memory (MB): peak = 3663.844 ; gain = 339.938 ; free physical = 173768 ; free virtual = 184942
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 737b4c56
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:46 . Memory (MB): peak = 3663.844 ; gain = 339.938 ; free physical = 173766 ; free virtual = 184941
+Ending Placer Task | Checksum: 69a495c5
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:46 . Memory (MB): peak = 3663.844 ; gain = 339.938 ; free physical = 173766 ; free virtual = 184941
+INFO: [Common 17-83] Releasing license: Implementation
+6579 Infos, 69 Warnings, 6 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:14 ; elapsed = 00:00:50 . Memory (MB): peak = 3663.844 ; gain = 339.941 ; free physical = 173921 ; free virtual = 185095
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads, tcl.statsThreshold
+

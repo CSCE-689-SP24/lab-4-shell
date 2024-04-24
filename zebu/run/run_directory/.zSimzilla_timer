@@ -1,0 +1,26 @@
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.18       fm:183212 m      vm:453 m       vm:+0 m      um:207 m       um:+1 m -- Update options by env
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.18       fm:183196 m      vm:465 m       vm:+0 m      um:224 m       um:+0 m -- 	load dumpType
+    elapsed:0.5 s      user:0 s    system:0.2 s      %cpu:35.56       load:0.18       fm:183163 m      vm:514 m      vm:+49 m      um:261 m      um:+37 m -- === Load RTX
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.18       fm:183163 m      vm:514 m       vm:+0 m      um:261 m       um:+0 m -- 	load pgbData
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.18       fm:183163 m      vm:514 m       vm:+0 m      um:261 m       um:+0 m -- === Check ZTDB type
+   elapsed:0.23 s    user:0.1 s    system:0.2 s      %cpu:12.63       load:0.18       fm:183141 m      vm:574 m      vm:+60 m      um:285 m      um:+24 m -- === beginDump
+    elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.18       fm:183141 m      vm:574 m       vm:+0 m      um:285 m       um:+0 m -- === Load graph/	load graph
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.18       fm:183141 m      vm:574 m       vm:+0 m      um:285 m       um:+0 m -- === Load graph/	load cid2Nnames
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.18       fm:183141 m      vm:574 m       vm:+0 m      um:285 m       um:+0 m -- === Load graph/	load equi2cid
+    elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:0.18       fm:183135 m      vm:606 m      vm:+32 m      um:291 m       um:+6 m -- === Load graph/	deserialize cells
+    elapsed:0.2 s      user:0 s      system:0 s       %cpu:0.00       load:0.18       fm:183135 m      vm:606 m      vm:+32 m      um:291 m       um:+6 m -- === Load graph
+      elapsed:0 s    user:0.1 s      system:0 s     %cpu:266.67       load:0.18       fm:183135 m      vm:606 m       vm:+0 m      um:291 m       um:+0 m -- === Create ZTDB feeder
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.18       fm:183135 m      vm:606 m       vm:+0 m      um:291 m       um:+0 m -- === Create 2-STEP FSDB dumper
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.18       fm:183135 m      vm:606 m       vm:+0 m      um:291 m       um:+0 m -- === Create Simul
+      elapsed:0 s      user:0 s    system:0.1 s     %cpu:800.00       load:0.18       fm:183135 m      vm:862 m     vm:+256 m      um:292 m       um:+1 m -- === annotate coords
+    elapsed:0.7 s    user:0.3 s    system:0.8 s     %cpu:158.84       load:0.18       fm:182959 m     vm:1046 m     vm:+115 m      um:469 m     um:+115 m -- === Simul/SMZ_SIMUL/Timer0/Timer1/Timer2/Timer3/Timer4/Timer5/Write headers of parallel FSDB writers
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.18       fm:182959 m     vm:1046 m       vm:+0 m      um:469 m       um:+0 m -- === Simul/SMZ_SIMUL/Timer0/Timer1/Timer2/Timer3/Timer4/Timer5/=== Build CellID2Fanouts map on Graph View
+      elapsed:1 s   user:0.15 s   system:0.18 s      %cpu:31.91       load:0.18       fm:182950 m     vm:1058 m     vm:+196 m      um:476 m     um:+184 m -- === Simul/SMZ_SIMUL/Timer0/Timer1/Timer2/Timer3/Timer4/Timer5
+      elapsed:1 s   user:0.15 s   system:0.18 s      %cpu:31.90       load:0.18       fm:182950 m     vm:1058 m     vm:+196 m      um:476 m     um:+184 m -- === Simul/SMZ_SIMUL/Timer0/Timer1/Timer2/Timer3/Timer4
+      elapsed:1 s   user:0.15 s   system:0.18 s      %cpu:31.88       load:0.18       fm:182950 m     vm:1058 m     vm:+196 m      um:476 m     um:+184 m -- === Simul/SMZ_SIMUL/Timer0/Timer1/Timer2/Timer3
+      elapsed:1 s   user:0.15 s   system:0.18 s      %cpu:31.87       load:0.18       fm:182950 m     vm:1058 m     vm:+196 m      um:476 m     um:+184 m -- === Simul/SMZ_SIMUL/Timer0/Timer1/Timer2
+      elapsed:1 s   user:0.15 s   system:0.18 s      %cpu:31.85       load:0.18       fm:182950 m     vm:1058 m     vm:+196 m      um:476 m     um:+184 m -- === Simul/SMZ_SIMUL/Timer0/Timer1
+      elapsed:1 s   user:0.15 s   system:0.18 s      %cpu:31.85       load:0.18       fm:182950 m     vm:1058 m     vm:+196 m      um:476 m     um:+184 m -- === Simul/SMZ_SIMUL/Timer0
+      elapsed:1 s   user:0.15 s   system:0.18 s      %cpu:31.84       load:0.18       fm:182950 m     vm:1058 m     vm:+196 m      um:476 m     um:+184 m -- === Simul/SMZ_SIMUL
+      elapsed:1 s   user:0.15 s   system:0.18 s      %cpu:31.82       load:0.18       fm:182950 m     vm:1058 m     vm:+196 m      um:476 m     um:+184 m -- === Simul
+    elapsed:0.2 s      user:0 s      system:0 s       %cpu:0.00       load:0.18       fm:182950 m     vm:1058 m       vm:+0 m      um:476 m       um:+0 m -- === endDump

@@ -1,0 +1,71 @@
+icsaSetZebuWork \
+           /home/faculty/d/davidkebo/davidkebo/csce689/labs/zebu_basic_lab_completed/zebu/zcui.work/backend_default
+simSetSimulator "-vcssv" -exec \
+           "/home/faculty/d/davidkebo/davidkebo/csce689/labs/zebu_basic_lab_completed/zebu/zcui.work/backend_default/../vcs_splitter//simv" \
+           -args
+debImport "-dbdir" \
+          "/home/faculty/d/davidkebo/davidkebo/csce689/labs/zebu_basic_lab_completed/zebu/zcui.work/backend_default/../vcs_splitter//simv.daidir" \
+          "-dbdir" \
+          "/home/faculty/d/davidkebo/davidkebo/csce689/labs/zebu_basic_lab_completed/zebu/zcui.work/backend_default/../vcs_splitter//simv.daidir"
+debLoadSimResult \
+           /home/faculty/d/davidkebo/davidkebo/csce689/labs/zebu_basic_lab_completed/zebu/run/run_directory/dynprobes_dump.vf
+wvCreateWindow
+verdiWindowResize -win $_Verdi_1 "168" "110" "783" "768"
+verdiWindowResize -win $_Verdi_1 "168" "110" "1610" "759"
+wvGetSignalOpen -win $_nWave2
+wvGetSignalSetScope -win $_nWave2 "/top"
+wvGetSignalSetScope -win $_nWave2 "/top/u_dut/u_check/sva_parity_error"
+wvGetSignalSetScope -win $_nWave2 "/top"
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/top/clk0} \
+{/top/clk1} \
+{/top/data_read\[8:0\]} \
+{/top/data_write\[8:0\]} \
+{/top/ready_read} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 1 2 3 4 5 )} 
+wvSetPosition -win $_nWave2 {("G1" 5)}
+wvGetSignalSetScope -win $_nWave2 "/top/u_stb/u0_proba"
+wvGetSignalSetScope -win $_nWave2 "/top/u_stb/u_check/sva_parity_error"
+wvGetSignalSetScope -win $_nWave2 "/top/u_stb/u_ram"
+wvSetPosition -win $_nWave2 {("G1" 7)}
+wvSetPosition -win $_nWave2 {("G1" 7)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/top/clk0} \
+{/top/clk1} \
+{/top/data_read\[8:0\]} \
+{/top/data_write\[8:0\]} \
+{/top/ready_read} \
+{/top/u_stb/u_ram/a\[7:0\]} \
+{/top/u_stb/u_ram/d\[8:0\]} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 6 7 )} 
+wvSetPosition -win $_nWave2 {("G1" 7)}
+wvSetPosition -win $_nWave2 {("G1" 7)}
+wvSetPosition -win $_nWave2 {("G1" 7)}
+wvAddSignal -win $_nWave2 -clear
+wvAddSignal -win $_nWave2 -group {"G1" \
+{/top/clk0} \
+{/top/clk1} \
+{/top/data_read\[8:0\]} \
+{/top/data_write\[8:0\]} \
+{/top/ready_read} \
+{/top/u_stb/u_ram/a\[7:0\]} \
+{/top/u_stb/u_ram/d\[8:0\]} \
+}
+wvAddSignal -win $_nWave2 -group {"G2" \
+}
+wvSelectSignal -win $_nWave2 {( "G1" 6 7 )} 
+wvSetPosition -win $_nWave2 {("G1" 7)}
+wvGetSignalClose -win $_nWave2
+verdiWindowResize -win $_Verdi_1 "157" "44" "1717" "887"
+wvZoomIn -win $_nWave2
+debExit

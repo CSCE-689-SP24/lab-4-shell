@@ -1,0 +1,62 @@
+Module parity{
+}
+
+EdfPortBounds ram{
+7 0 a
+8 0 d
+}
+EdfPortBounds fifo_0000{
+7 0 d_i
+7 0 q_o
+7 0 qa_o
+}
+EdfPortBounds parity{
+7 0 a
+}
+EdfPortBounds proba{
+9 0 level
+}
+EdfPortBounds dut{
+8 0 datain
+8 0 dataout
+}
+EdfPortBounds stb{
+8 0 data_rd
+8 0 data_wr
+}
+EdfPortBounds ZSVA_MOD_1{
+0 0 sva_busy
+0 0 sva_end
+0 0 sva_start
+0 0 sva_success
+0 0 temp_busy
+0 0 temp_end
+0 0 temp_start
+0 0 temp_success
+}
+EdfPortBounds fifo_usage_spy{
+7 0 datain
+7 0 dataout
+}
+EdfPortBounds proba_0000{
+9 0 level
+}
+EdfPortBounds parity_check{
+8 0 a
+}
+EdfPortBounds rom{
+7 0 a
+8 0 q
+}
+EdfPortBounds ZSVA_MOD_0{
+0 0 sva_busy
+0 0 sva_end
+0 0 sva_start
+0 0 sva_success
+0 0 temp_busy
+0 0 temp_end
+0 0 temp_start
+0 0 temp_success
+}
+NonAliasNets parity{
+}

@@ -1,0 +1,85 @@
+README: zebu fifo lab with SVAs: April 2023
+
+######## FILE MODIFIED FOR SVA #########
+
+source/design/fifo.sv
+
+
+
+SVA 1: 
+
+###### Introduce a bug in rtl(fifo.sv) ######
+
+Comment out following line:
+
+ef <= 1; 
+
+###### Where to add SVA ######
+
+
+Before "endmodule" (last line in fifo.sv) add these lines:
+
+property sva_error1;
+  @(posedge rclk_i) !ef |-> re;
+endproperty
+
+sva_error1_chk : assert property (sva_error1);
+
+
+SVA 2: 
+
+###### Introduce a bug in rtl(fifo.sv)######
+
+//assign we      = we_i && !ff;  (comment this line out in fifo.sv)
+  assign we      = we_i;          (add this code under the above commented line in fifo.sv)   
+
+
+###### Where to add SVA ######
+
+
+Before "endmodule" (last line in fifo.sv) add these lines:
+
+property sva_error2;
+  @(posedge rclk_i) ff |-> !we;
+endproperty
+
+sva_error2_chk : assert property (sva_error2);
+
+
+
+				
+####### RUNTIME #######	
+
+### Check your runtime environment is correct
+	1. check you have compiled your design for the right ZeBu Server system(HW Config file) 
+	2. check you are connected on the host PC connected to the right ZeBu Server system
+	
+	For example: Path to $ZEBU_WORK should be set to: <your path to>/ZeBu_BasicLabs/zebu/zcui.work.SVA/zebu.work
+	            	If not set then do this: setenv ZEBU_WORK <your path to>/ZeBu_BasicLabs/zebu/zcui.work.DPI/zebu.work
+			Then to check if it is set, Do: echo $ZEBU_WORK and this should show the above path
+	
+### All of the runtime commands are launched from ZeBu_BasicLabs/zebu/run/run_directory/
+
+
+####### RUNTIME #######	
+
+### Check your runtime environment is correct
+	1. check you have compiled your design for the right ZeBu Server system(HW Config file) 
+	2. check you are connected on the host PC connected to the right ZeBu Server system
+	
+	For example: Path to $ZEBU_WORK should be set to: <your path to>/ZeBu_BasicLabs/zebu/zcui.work.SVA/zebu.work
+	            	If not set then do this: setenv ZEBU_WORK <your path to>/ZeBu_BasicLabs/zebu/zcui.work.SVA/zebu.work
+			Then to check if it is set, Do: echo $ZEBU_WORK and this should show the above path
+	
+### All of the runtime commands are launched from ZeBu_BasicLabs/zebu/run/run_directory/
+
+
+### Launching zRci with zRci_script.tcl
+		
+		1. Go on the emulator from /run/run_directory/
+			For example we used this:  rems --zebu.work=$ZEBU_WORK
+			
+		2. Launch this command: zRci -zebu-work ../../zcui.work/zebu.work/ ../script/zRci_script.tcl
+
+### zRci.log will have the information on the SVA errors.  
+

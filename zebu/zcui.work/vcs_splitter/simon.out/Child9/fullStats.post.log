@@ -1,0 +1,22 @@
+
+Processing ram
+before constantPropagate: 0u 0s 1072e 601640kB
+after constantPropagate: 0u 0s 1072e 601640kB
+before removeUnusedSignals circuit: 0u 0s 1072e 601640kB
+after removeUnusedSignals circuit: 0u 0s 1072e 601640kB
+before optimize latch enable: 0u 0s 1072e 601640kB
+after optimize latch enable: 0u 0s 1072e 601640kB
+before removeReadAfterMissingWrite: 0u 0s 1072e 601640kB
+after removeReadAfterMissingWrite: 0u 0s 1072e 601640kB
+before undoDimensionalSplitOfMemories: 0u 0s 1072e 601640kB
+after undoDimensionalSplitOfMemories: 0u 0s 1072e 601640kB
+before extractMemories: 0u 0s 1072e 601640kB
+after extractMemories: 0u 0s 1084e 601640kB
+before extractHolds: 0u 0s 1081e 601640kB
+after extractHolds: 0u 0s 1081e 601640kB
+before simplifyAdders: 0u 0s 1081e 601640kB
+after simplifyAdders: 0u 0s 1081e 601640kB
+before reportUnresolvedType: 0u 0s 1081e 601640kB
+after reportUnresolvedType: 0u 0s 1081e 601640kB
+before dumpingPerModuleScm : 0u 0s 1081e 601640kB
+after dumpingPerModuleScm : 0u 0s 1081e 601640kB

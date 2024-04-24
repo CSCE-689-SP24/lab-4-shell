@@ -1,0 +1,9 @@
+    elapsed:0.1 s    user:0.1 s      system:0 s     %cpu:444.44       load:0.34       fm:181094 m      vm:375 m       vm:+0 m       um:98 m       um:+0 m -- IMPORT
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.34       fm:181094 m      vm:377 m       vm:+2 m       um:98 m       um:+0 m -- IMPORT
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.34       fm:181093 m      vm:377 m       vm:+0 m       um:98 m       um:+0 m -- ANALYSIS/initializeAnalysis.
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.34       fm:181093 m      vm:377 m       vm:+0 m       um:98 m       um:+0 m -- ANALYSIS
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.34       fm:181093 m      vm:377 m       vm:+0 m       um:98 m       um:+0 m -- ANALYSIS
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.34       fm:181087 m      vm:413 m      vm:+36 m      um:101 m       um:+3 m -- Build output paths
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.34       fm:181077 m      vm:445 m       vm:+0 m      um:115 m       um:+0 m -- Build output paths
+      elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:0.34       fm:181077 m      vm:445 m       vm:+0 m      um:115 m       um:+0 m -- ANALYSIS
+    elapsed:0.1 s    user:0.1 s    system:0.1 s     %cpu:181.82       load:0.34       fm:181050 m      vm:529 m      vm:+84 m      um:143 m      um:+28 m -- Build output paths

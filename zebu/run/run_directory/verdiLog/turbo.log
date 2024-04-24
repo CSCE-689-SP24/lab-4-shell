@@ -1,0 +1,4 @@
+Command Line: /opt/coe/synopsys/verdi/Q-2020.03-SP2-12/platform/LINUXAMD64/bin/Novas -emulation --zebu-work ../../zcui.work/zebu.work/ -ssf fwc_dump.vf
+uname(Linux csce-quinn-s1.engr.tamu.edu 3.10.0-1160.88.1.el7.x86_64 #1 SMP Sat Feb 18 13:27:00 UTC 2023 x86_64)
+Disabled AskUser2 Message (Response 0): Close all windows and exit verdi?
+au time 57.696977 4.370542 2.370739 delta 286642176 286642176 total 745246720 745246720

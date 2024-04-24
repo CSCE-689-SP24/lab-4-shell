@@ -1,0 +1,13 @@
+            module           user(s)         system(s)             nodes            vm(kb)              file
+              clkg                 0                 0                81            601640 Child10/fullStats.log
+               dut                 0                 0               171            601640 Child1/fullStats.log
+         fifo_0000                 0                 0               439            601640 Child4/fullStats.log
+    fifo_usage_spy                 0                 0               582            601640 Child11/fullStats.log
+            parity                 0                 0                55            601640 Child5/fullStats.log
+      parity_check                 0                 0               430            601640 Child3/fullStats.log
+             proba                 0                 0               138            601640 Child6/fullStats.log
+        proba_0000                 0                 0               138            601640 Child8/fullStats.log
+               ram                 0                 0                90            601640 Child9/fullStats.log
+               rom                 0                 0                71            601640 Child7/fullStats.log
+               stb                 0                 0               735            602300 Child2/fullStats.log
+               top                 0                 0               126            601640 Child0/fullStats.log

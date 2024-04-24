@@ -1,0 +1,32 @@
+.. Command: /opt/coe/synopsys/zebu/Q-2020.03-SP1-4/bin/tracean3.py --top-delay=5 --syn-details=5 --pr-summary-by-time=5 --hhmm --local-time=detect --show-memory --fix-graph --cpu-time /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-solution/zebu/zcui.work
+.. Reading /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-solution/zebu/zcui.work/zCui/backup/backend_default_23_5_1_14_27_26/prof/tracerun.cui ...
+.. Detected --work=/home/faculty/d/davidkebo/davidkebo/csce689/labs/project/zebu/zcui.work/.
+.. Detected --submit-host=csce-quinn-s1.engr.tamu.edu
+.. Detected local time offset of -5.0 hours
+.. The first backend_default_23_5_1_14_27_26 task started at Mon, 01 May 2023 19:27:28 UTC
+.. Reading /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-solution/zebu/zcui.work/zCui/backup/backend_default_23_9_3_22_06_43/prof/tracerun.cui ...
+.. The first backend_default_23_9_3_22_06_43 task started at Mon, 04 Sep 2023 03:06:46 UTC
+.. Reading /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-solution/zebu/zcui.work/zCui/backup/backend_default_23_9_4_13_13_11/prof/tracerun.cui ...
+.. The first backend_default_23_9_4_13_13_11 task started at Mon, 04 Sep 2023 18:13:13 UTC
+.. Reading /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-solution/zebu/zcui.work/zCui/backup/backend_default_23_9_6_15_13_37/prof/tracerun.cui ...
+.. The first backend_default_23_9_6_15_13_37 task started at Wed, 06 Sep 2023 20:13:39 UTC
+.. Reading /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-solution/zebu/zcui.work/zCui/backup/backend_default_23_9_11_10_17_52/prof/tracerun.cui ...
+.. The first backend_default_23_9_11_10_17_52 task started at Mon, 11 Sep 2023 15:17:55 UTC
+.. Reading /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-solution/zebu/zcui.work/zCui/backup/backend_default_24_1_8_10_43_11/prof/tracerun.cui ...
+.. The first backend_default_24_1_8_10_43_11 task started at Mon, 08 Jan 2024 16:43:14 UTC
+.. Reading /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-solution/zebu/zcui.work/zCui/backup/backend_default_24_4_22_09_33_41/prof/tracerun.cui ...
+Traceback (most recent call last):
+  File "/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/bin/tracean3.py", line 5907, in <module>
+    main()
+  File "/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/bin/tracean3.py", line 5854, in main
+    IncrementalReport(dirName)
+  File "/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/bin/tracean3.py", line 5758, in IncrementalReport
+    xdl = ReadExecDataList(dirName, incrCache, continueIfEmpty = True)
+  File "/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/bin/tracean3.py", line 5321, in ReadExecDataList
+    if not xdl.readExecData(dirName, TRACERUN_DIGEST, incrCache, continueIfEmpty):
+  File "/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/bin/tracean3.py", line 1571, in readExecData
+    td.completeObjectConstruction(self.__hostDict)
+  File "/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/bin/tracean3.py", line 886, in completeObjectConstruction
+    assert tmp.startswith(ZCUI_COMMAND_PREFIX), self.cmdArgs
+AssertionError: ['/bin/sh', '/home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-solution/zebu/zcui.work/./zCui/com/backend_default_zTime_command.sh']
+command exit code is '0'

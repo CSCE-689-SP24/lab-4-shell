@@ -1,0 +1,226 @@
+README: zebu fifo lab: Oct 2022
+
+Step by step detailed info on adding commands found in ZeBu_Basic_labs pdf 
+
+### ENVIRONMENT SETUP
+
+##Check settings for your emulation system: 
+		1. By doing: echo $<ENV_NAME> we can check if env is set. 
+			If we get "undefined variable" it is not set.
+		2. So then, we can setenv by: setenv <ENV_NAME> <path_pointing_to _the _right_version>
+		3. For our lab to work we need the following env set:
+		
+$VCS_HOME
+	For example we used this: /slowfs/vgzeburelease3/OST/ZEBU2020.03-SP1-4-OST2/vcs/Q-2020.03-SP2-11
+$ZEBU_SYSTEM_DIR
+	For example we used this: /remote/vginterfaces1/zebu_system_dir/CONFIG.ZEBU2020.03/ZSE/zs4_4s.zs_0020 
+$VERDI_HOME
+	For example we used this: /slowfs/vgzeburelease3/OST/ZEBU2020.03-SP1-4-OST2/verdi/Q-2020.03-SP2-11 
+$ZEBU_ROOT
+	For example we used this: /slowfs/vgzeburelease3/OST/ZEBU2020.03-SP1-4-OST2/zebu/Q-2020.03-SP1-4
+	
+##Ensure you have info on remote commands expected on your network
+
+$REMOTECMD
+	For example we used this: 'qrsh -P zebucae -cwd -V -noshell -now no -verbose -l "mem_free=1G" 
+
+### BASIC COMPILATION ###
+
+1. stb/stb.sv
+	Instantiate Zebu clock generator (zceiClkPort) for each design clk
+	
+2. Check syntax of your changes InVerilog by launching VCS
+	Go to ZeBu_BasicLabs/zebu/ to launch VCS
+
+## Create VCS script and UTF project file
+		
+3. Add VCS command to zebu/src/vcs_cmd.sh
+
+4. Open zebu/src/settings.utf and add these commands
+	Declare HW Config file
+	Set remote commands
+5. Open zebu/src/project.utf and add these commands
+	Source settings.utf script
+	Declare the VCS script
+	Declare top module
+	Set automatic number of modules to support multi user for emulation runtime
+	
+## Launch Compilation and Analyze results
+
+6. From ZeBu_BasicLabs/zebu/ 	
+	Launch zCui with project.utf(-u), batch mode(-n), and stop after synthesis(-d) 
+	Command for compilation: zCui -u src/project.utf -n -d
+	
+	
+7. Check compilation results and interesting logs
+	Generated output directory ./zcui.work and it has subdirectories 
+	Interesting logs: zcui.work/zCui/log/
+		- zCui.log
+		- vcs_splitter_VCS_Task_Builder.log
+		- design_Default_RTL_GroupBundle_0_Synthesis.log
+		
+####### FULL COMPILATION #######		
+		
+# create a new SV source file (source/stb/wave.sv)	
+# Modify the list of files for VCS (source/sources.f) to add the additional wave.sv file
+# Modify the VCS script (zebu/src/vcs_cmd.sh) with the additional wave top-level module
+# Add following commands to the project.utf file:
+	Activating debug features to capture waveforms
+	Preventing optimization of write-only memories by synthesis 
+	Enabling synthesis for zDPI 
+	Enabling synthesis for $display system task
+	Enabling System Verilog Assertions 
+	Specifying signals that need to be forced during emulation runtime
+	Specifying signals that need to be read during emulation runtime (via dynamic probes)
+	
+# Launch zCui from ZeBu_BasicLabs/zebu/ 
+	Launch in GUI mode: zCui -u src/project.utf 
+	Click Make Target
+	Select full compilation
+	Click OK
+# zCui Global Log automatically displays when compilation is successfully completed
+	Shows information on:
+		-Performace
+		-Target
+		-Memory
+		
+				
+####### RUNTIME #######	
+
+### Check your runtime environment is correct
+	1. check you have compiled your design for the right ZeBu Server system(HW Config file) 
+	2. check you are connected on the host PC connected to the right ZeBu Server system
+	
+	For example: Path to $ZEBU_WORK should be set to: <your path to>/ZeBu_BasicLabs/zebu/zcui.work/zebu.work
+	            	If not set then do this: setenv ZEBU_WORK <your path to>/ZeBu_BasicLabs/zebu/zcui.work/zebu.work
+			Then to check if it is set do: echo $ZEBU_WORK and this should show the above path
+	
+### All of the runtime commands are launched from ZeBu_BasicLabs/zebu/run/run_directory/
+
+### Writing Tcl script for zRci
+
+	1. ##### Basic runtime controls #####
+	
+		In ZeBu_BasicLabs/zebu/run/script/zRci_script.tcl file, add the following commands:
+			-Initializing emulation with output directory name
+			-Initializing memory
+			# sections left blank for now #
+			-Forcing signals to set parameters 
+			(testbench initialization)
+			-Forcing rstn signal to enable reset
+			-Running 10 cycles
+			-Disabling reset
+			-Running 1000 cycles
+			-Displaying signals value in decimal format
+			-Dumping memory content to a memdump.hex text file
+			# sections left blank for now #
+			-Close emulation (last command of the script)
+			
+	### Launching zRci with basic runtime controls
+	 
+		1. Go on the emulator from /run/run_directory/
+			For example we used this:  rems --zebu.work=$ZEBU_WORK
+			
+		2. Launch this command: zRci -zebu-work ../../zcui.work/zebu.work/ ../script/zRci_script.tcl
+		
+	### Observe ouput of the test
+		
+	2. ##### Runtime with SVAs #####
+	
+	 	In ZeBu_BasicLabs/zebu/script/zRci_script.tcl file, add the following commands for zRci in the "SVAs - activation" section
+			-SVA Callback Signature
+			-Initializing and starting the SVAs
+			-Enabling all SVAs or we can enable some specific SVAs
+			
+	### Launching zRci with SVAs
+	
+		1. Go on the emulator from /run/run_directory/
+			For example we used this:  rems --zebu.work=$ZEBU_WORK
+			
+		2. Launch this command: zRci -zebu-work ../../zcui.work/zebu.work/ ../script/zRci_script.tcl
+		
+		
+	### Observe output of this test	
+	
+	3. ##### Runtime with zDPI #####
+	
+		1. DPI functions are implemented in dpicalls.cc (in run/libDPI) It reports the minimum of FIFO free place
+		
+		2. Compile C code of the DPI (in run/libDPI)
+		
+			g++ -m64 -O2 -I. -I$ZEBU_ROOT/include -Wall -fexceptions -rdynamic -fPIC -c Collect.cc -o Collect.o
+			g++ -m64 -O2 -I. -I$ZEBU_ROOT/include -Wall -fexceptions -rdynamic -fPIC -c dpicalls.cc -o dpicalls.o
+			g++ -shared -o libDPI.so -m64 -lpthread -L$ZEBU_ROOT/lib Collect.o dpicalls.o
+		
+		3. In run/script/zRci_script.tcl file, add the following zRci commands
+		
+For easier reading of the results, you can/should also comment/remove the SVA-related lines in the script.
+
+			-To load DPI dynamic library
+			-To set the sampling clock
+			-To enable DPI calls
+			
+	### Launching zRci with zDPI
+		
+		1. Go on the emulator from /run/run_directory/
+			For example we used this:  rems --zebu.work=$ZEBU_WORK
+			
+		2. Launch this command: zRci -zebu-work ../../zcui.work/zebu.work/ ../script/zRci_script.tcl
+		
+	### Parity errors are reported along the testbench execution	
+	
+	4. ##### Runtime with waveform capture #####
+	
+			In ZeBu_BasicLabs/zebu/run/script/zRci_script.tcl file to capture waveforms
+			
+			For Dynamic Probes: 
+				-Start dump (Dynamic Probes)
+				-Stop dump (Dynamic Probes)
+			
+			For FWC:
+				-Start dump (FWC)
+				-Stop dump (FWC)
+				
+		### Waveform capture with zRci ###
+		
+			In run/run_directory
+				waveforms are stored in ZTDB format in run/run_directroy/runtime_output	directory. If runtime_output exists then make sure runtime_output dir is cleaned before launching zRci
+			
+			Launch emulation: 
+			
+				1. Go on the emulator from /run/run_directory/
+					For example we used this:  rems --zebu.work=$ZEBU_WORK
+				2. Launch this command: zRci -zebu-work ../../zcui.work/zebu.work/ ../script/zRci_script.tcl
+			
+####### Viewing waveforms with verdi ########
+
+	##### Dynamic probes waveform #####
+	
+		1. Results are in dynprobes_dump.vf file + dynprobes_dump subdir for later use
+			zWaveform --work ../../zcui.work/zebu.work/ --ztdb runtime_output/dynprobes_dump.ztdb --fsdb dynprobes_dump --timescale 1ns					
+		
+		2. launch verdi to view the results
+			verdi -emulation --zebu-work ../../zcui.work/zebu.work -ssf dynprobes_dump.vf  
+		
+	##### FWC waveform #####
+	
+		1. zConvertToFsdb --zebu-work ../../zcui.work/zebu.work --ztdb runtime_output/fwc_dump.ztdb --fsdb fwc_dump --timescale 1ns
+	      	
+		2. launch verdi to view the results
+			verdi -emulation --zebu-work ../../zcui.work/zebu.work/ -ssf fwc_dump.vf  
+
+
+
+######## LIST OF FILES MODIFIED/CREATED TO RUN THIS LAB #########
+
+1. stb/stb.sv (modified)
+2. zebu/src/vcs_cmd.sh (modified)
+3. zebu/src/settings.utf (modified)
+4. zebu/src/project.utf (modified)
+5. source/stb/wave.sv  (created new file)
+6. source/sources.f (added the created wave.sv to this file)
+7. zebu/src/vcs_cmd.sh (modified again to add wave top-level module)
+8. ZeBu_BasicLabs/zebu/run/script/zRci_script.tcl (modified)
+
+
+
