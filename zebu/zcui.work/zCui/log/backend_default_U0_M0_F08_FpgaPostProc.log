@@ -22,7 +22,7 @@
 
 # zNetgen /opt/coe/synopsys/zebu/Q-2020.03-SP1-4/etc/znetgen/zNetgen_post_proc_fpga.tcl -log U0_M0_F08_FpgaPostProc.log 
 
-# start time is Wed Apr 24 06:35:28 2024
+# start time is Wed May  1 16:00:37 2024
 
 
 
@@ -30,15 +30,15 @@
 # Build Date : Oct 18 2022 - 00:58:44
 # ---------------------------System Context--------------------------- 
 # Cpu        40 x bogomips - 4604.90 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
-#            Load: 0.81 0.28 0.24 2/473 24096
+#            Load: 0.14 0.06 0.06 2/482 2649
 #            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.108.1.el7.x86_64
-# Memory     Total: 193183 MB Free: 172667 MB
-#            Total Free including cache: 187813 MB
-#            Swap cache: 0 MB Cached space: 15146 MB
+# Memory     Total: 193183 MB Free: 171478 MB
+#            Total Free including cache: 187736 MB
+#            Swap cache: 0 MB Cached space: 16258 MB
 #            Swap space: 4095 MB Free Swap space: 4095 MB
 #            VmSize: 426 MB VmPeak: 426 MB
 # Disk Space Total: 250 GB Available: 240 GB Used: 10 GB
-#            Free inodes: 524112067
+#            Free inodes: 524108587
 # Stack                                Soft Limit           Hard Limit  
 #            Max stack size            8388608              unlimited            bytes     
 # -------------------------------------------------------------------- 
@@ -48,9 +48,9 @@
 #   step INIT : Advanced commands have been loaded
 
 #   exec summary :    1 warnings,    0 syntax errors,    0 fatal errors,    0 internal errors
-#   exec summary : user 0m0.181s, sys 0m0.97s
-#   exec summary : Total memory: 499648 kB - RSS memory: 141220 kB - Data memory: 131132 kB
+#   exec summary : user 0m0.191s, sys 0m0.102s
+#   exec summary : Total memory: 499648 kB - RSS memory: 139392 kB - Data memory: 131132 kB
 #   exec summary : Successful execution
 
-# end time is Wed Apr 24 06:35:29 2024
+# end time is Wed May  1 16:00:39 2024
 command exit code is '0'

@@ -3643,3 +3643,689 @@ Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: Origin
 Name: Create Global DB
   Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_zDB_Global.log
   Log (zDb script): zcui.work/backend_default/zDB_final_zcui.tcl
+________________________________________________________________________________
+
+                                    ZeBu (R)
+                          ZeBu Compiler User Interface
+
+              Version Q-2020.03-SP1-4 for linux64 - Oct 18, 2022 
+
+                    Copyright (c) 2002 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+# Build Date : Oct 18 2022 - 00:41:38
+
+#   Project filename: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/utf_generatefiles/gen_ufe_project.zpf
+
+#   30/04/24  14:13:06 - Re-Compute Task Graph Node Rows
+#   30/04/24  14:13:06 - backend_default_Project_Analyzer added
+#   30/04/24  14:13:06 - backend_default_SingleBackend_Compilation_Checker added
+#   30/04/24  14:13:06 - Re-Compute Task Graph Node Rows
+#   30/04/24  14:13:06 - backend_default_Project_Analyzer spawned 
+#   30/04/24  14:13:06 - backend_default_Project_Analyzer normal task termination
+#   30/04/24  14:13:06 - backend_default_BackendEntry added
+#   30/04/24  14:13:06 - vcs_splitter_VCS_Task_Builder added
+#   30/04/24  14:13:06 - Post_Vcs_Task_Builder added
+#   30/04/24  14:13:06 - VCS_Task_Analyzer added
+#   30/04/24  14:13:06 - backend_default_Intermediate_Profiling_Results_Analyzer_VCSAnalyzer added
+#   30/04/24  14:13:06 - Target_Config added
+#   30/04/24  14:13:06 - Target_Config_Analyzer added
+#   30/04/24  14:13:06 - design_Fs_Macro_Script_Builder added
+#   30/04/24  14:13:06 - design_Fs_Macro added
+#   30/04/24  14:13:06 - Vcs_Version_Checker added
+#   30/04/24  14:13:06 - FE_Version_Checker added
+#   30/04/24  14:13:06 - BE_Version_Checker added
+#   30/04/24  14:13:06 - Re-Compute Task Graph Node Rows
+#   30/04/24  14:13:08 - BE_Version_Checker spawned (queue ZebuLocal, 1 used) 
+#   30/04/24  14:13:08 - BE_Version_Checker info : Pid: 8868
+#   30/04/24  14:13:08 - FE_Version_Checker spawned (queue ZebuLocal, 2 used) 
+#   30/04/24  14:13:08 - FE_Version_Checker info : Pid: 8869
+#   30/04/24  14:13:08 - Vcs_Version_Checker spawned (queue ZebuLocal, 3 used) 
+#   30/04/24  14:13:08 - Vcs_Version_Checker info : Pid: 8870
+#   30/04/24  14:13:10 - BE_Version_Checker normal task termination
+#   30/04/24  14:13:10 - Vcs_Version_Checker normal task termination
+#   30/04/24  14:13:10 - FE_Version_Checker normal task termination
+#   30/04/24  14:13:10 - Target_Config spawned (queue Zebu, 1 used) 
+#   30/04/24  14:13:10 - Target_Config info : Pid: 9009
+#   30/04/24  14:13:12 - Target_Config normal task termination
+#   30/04/24  14:13:12 - Target_Config_Analyzer spawned 
+#   30/04/24  14:13:12 - Target_Config_Analyzer normal task termination
+#   30/04/24  14:13:12 - backend_default_zTopBuild added
+#   30/04/24  14:13:12 - backend_default_zTopBuildResultAnalyzer added
+#   30/04/24  14:13:12 - backend_default_PreParScriptBuilder added
+#   30/04/24  14:13:12 - backend_default_PostZCoreCompilationJoin added
+#   30/04/24  14:13:12 - backend_default_zPar added
+#   30/04/24  14:13:12 - backend_default_Intermediate_Profiling_Results_Analyzer_ZTopBuildAnalyzer added
+#   30/04/24  14:13:12 - backend_default_Design_FPGA_Dispatch added
+#   30/04/24  14:13:12 - backend_default_PostFpgaCompilationJoin added
+#   30/04/24  14:13:12 - backend_default_FpgaResultAnalyzer added
+#   30/04/24  14:13:12 - backend_default_zTime added
+#   30/04/24  14:13:12 - backend_default_Intermediate_Profiling_Results_Analyzer_ZParAnalyzer added
+#   30/04/24  14:13:12 - backend_default_zDB_Global_Controller added
+#   30/04/24  14:13:12 - backend_default_Build_ZDBPostProc_Script added
+#   30/04/24  14:13:12 - backend_default_preparezTimeFpga added
+#   30/04/24  14:13:12 - backend_default_zTimeFpga added
+#   30/04/24  14:13:12 - backend_default_zAuditReport added
+#   30/04/24  14:13:12 - Re-Compute Task Graph Node Rows
+#   30/04/24  14:13:14 - design_Fs_Macro_Script_Builder spawned 
+#   30/04/24  14:13:14 - design_Fs_Macro_Script_Builder normal task termination
+#   30/04/24  14:13:16 - design_Fs_Macro normal task termination: skipped
+#   30/04/24  14:13:19 - vcs_splitter_VCS_Task_Builder spawned (queue Zebu, 1 used) 
+#   30/04/24  14:13:19 - vcs_splitter_VCS_Task_Builder info : Pid: 9057
+#   30/04/24  14:13:25 - vcs_splitter_VCS_Task_Builder normal task termination
+#   30/04/24  14:13:25 - Post_Vcs_Task_Builder spawned 
+#   30/04/24  14:13:25 - Post_Vcs_Task_Builder normal task termination
+#   30/04/24  14:13:25 - VCS_Task_Analyzer spawned 
+#   30/04/24  14:13:26 - Verdi_Compilation added
+#   30/04/24  14:13:26 - RhinoFsdb_Builder added
+#   30/04/24  14:13:26 - stable_design_Default_RTL_Group_Synthesis added
+#   30/04/24  14:13:26 - stable_design_Default_RTL_Group_Synthesis_design_Default_RTL_Group_stable_analyzer added
+#   30/04/24  14:13:26 - Re-Compute Task Graph Node Rows
+#   30/04/24  14:13:26 - VCS_Task_Analyzer normal task termination
+#   30/04/24  14:13:26 - backend_default_Intermediate_Profiling_Results_Analyzer_VCSAnalyzer spawned (queue ZebuLocal, 1 used) 
+#   30/04/24  14:13:26 - backend_default_Intermediate_Profiling_Results_Analyzer_VCSAnalyzer info : Pid: 9744
+#   30/04/24  14:13:28 - backend_default_Intermediate_Profiling_Results_Analyzer_VCSAnalyzer normal task termination
+#   30/04/24  14:13:28 - stable_design_Default_RTL_Group_Synthesis normal task termination: skipped
+#   30/04/24  14:13:28 - RhinoFsdb_Builder spawned (queue Zebu, 1 used) 
+#   30/04/24  14:13:28 - RhinoFsdb_Builder info : Pid: 9762
+#   30/04/24  14:13:28 - Verdi_Compilation spawned (queue Zebu, 2 used) 
+#   30/04/24  14:13:28 - Verdi_Compilation info : Pid: 9763
+#   30/04/24  14:13:30 - RhinoFsdb_Builder normal task termination
+#   30/04/24  14:13:30 - Verdi_Compilation normal task termination
+#   30/04/24  14:13:30 - stable_design_Default_RTL_Group_Synthesis_design_Default_RTL_Group_stable_analyzer spawned 
+#   30/04/24  14:13:31 - stable_design_Default_RTL_Group_Synthesis_design_Default_RTL_Group_stable_analyzer normal task termination
+#   30/04/24  14:13:31 - design_Default_RTL_Group_Memory_ram_zMem added
+#   30/04/24  14:13:31 - design_Default_RTL_Group_Memory_rom_zMem added
+#   30/04/24  14:13:31 - Re-Compute Task Graph Node Rows
+#   30/04/24  14:13:33 - design_Default_RTL_Group_Memory_ram_zMem normal task termination: skipped
+#   30/04/24  14:13:33 - design_Default_RTL_Group_Memory_rom_zMem normal task termination: skipped
+#   30/04/24  14:13:35 - backend_default_BackendEntry spawned 
+#   30/04/24  14:13:36 - Re-Compute Task Graph Node Rows
+#   30/04/24  14:13:36 - backend_default_zDveTool added
+#   30/04/24  14:13:36 - backend_default_zEquiGenerator added
+#   30/04/24  14:13:36 - backend_default_zRtlToEqui added
+#   30/04/24  14:13:36 - backend_default_zSimuFsdbHeader added
+#   30/04/24  14:13:36 - backend_default_zSimzilla added
+#   30/04/24  14:13:36 - backend_default_zGraphGenerator added
+#   30/04/24  14:13:36 - backend_default_RTL_DB_Indexer added
+#   30/04/24  14:13:36 - Re-Compute Task Graph Node Rows
+#   30/04/24  14:13:36 - backend_default_RTL_DB_Link added
+#   30/04/24  14:13:36 - backend_default_RTL_DB_RunTime added
+#   30/04/24  14:13:36 - backend_default_Vcs_Link added
+#   30/04/24  14:13:36 - backend_default_OptionsDbProc added
+#   30/04/24  14:13:36 - Re-Compute Task Graph Node Rows
+#   30/04/24  14:13:36 - backend_default_BackendEntry normal task termination
+#   30/04/24  14:13:36 - Re-Compute Task Graph Node Rows
+#   30/04/24  14:13:36 - backend_default_Intermediate_Profiling_Results_Analyzer_BackendEntry added
+#   30/04/24  14:13:36 - Re-Compute Task Graph Node Rows
+#   30/04/24  14:13:36 - performance diagnostic profiler report generated in zCui/backup/backend_default_24_4_30_14_13_05/backend_default_globalLog.html
+#   30/04/24  14:13:38 - backend_default_Intermediate_Profiling_Results_Analyzer_BackendEntry normal task termination: skipped
+#   30/04/24  14:13:38 - backend_default_zDveTool normal task termination: skipped
+#   30/04/24  14:13:38 - backend_default_OptionsDbProc normal task termination: skipped
+#   30/04/24  14:13:38 - backend_default_Vcs_Link normal task termination: skipped
+#   30/04/24  14:13:38 - backend_default_RTL_DB_Indexer spawned (queue Zebu, 1 used) 
+#   30/04/24  14:13:38 - backend_default_RTL_DB_Indexer info : Pid: 9824
+#   30/04/24  14:13:40 - backend_default_RTL_DB_Indexer normal task termination
+#   30/04/24  14:13:40 - backend_default_RTL_DB_Link spawned (queue Zebu, 1 used) 
+#   30/04/24  14:13:40 - backend_default_RTL_DB_Link info : Pid: 9880
+#   30/04/24  14:13:42 - backend_default_RTL_DB_Link normal task termination
+#   30/04/24  14:13:42 - backend_default_zTopBuild normal task termination: skipped
+#   30/04/24  14:13:42 - backend_default_RTL_DB_RunTime spawned (queue Zebu, 1 used) 
+#   30/04/24  14:13:42 - backend_default_RTL_DB_RunTime info : Pid: 9898
+#   30/04/24  14:13:42 - performance diagnostic profiler report generated in zCui/backup/backend_default_24_4_30_14_13_05/backend_default_globalLog.html
+#   30/04/24  14:13:44 - backend_default_RTL_DB_RunTime normal task termination
+#   30/04/24  14:13:44 - backend_default_zTopBuildResultAnalyzer spawned 
+#   30/04/24  14:13:44 - backend_default_zBuildClusteringSaver added
+#   30/04/24  14:13:44 - backend_default_zCoreBuild_Part_0 added
+#   30/04/24  14:13:44 - backend_default_zCoreBuildAnalyzer_Part_0 added
+#   30/04/24  14:13:44 - backend_default_RTB_Front_End added
+#   30/04/24  14:13:44 - backend_default_RTB_Front_End_Result_Analyzer added
+#   30/04/24  14:13:44 - Re-Compute Task Graph Node Rows
+#   30/04/24  14:13:44 - backend_default_zTopBuildResultAnalyzer normal task termination
+#   30/04/24  14:13:44 - backend_default_Intermediate_Profiling_Results_Analyzer_ZTopBuildAnalyzer normal task termination: skipped
+#   30/04/24  14:13:44 - backend_default_zRtlToEqui normal task termination: skipped
+#   30/04/24  14:13:45 - backend_default_zSimuFsdbHeader normal task termination: skipped
+#   30/04/24  14:13:45 - backend_default_zEquiGenerator normal task termination: skipped
+#   30/04/24  14:13:47 - backend_default_zGraphGenerator normal task termination: skipped
+#   30/04/24  14:13:47 - backend_default_zSimzilla normal task termination: skipped
+#   30/04/24  14:13:47 - backend_default_zCoreBuild_Part_0 normal task termination: skipped
+#   30/04/24  14:13:47 - backend_default_RTB_Front_End normal task termination: skipped
+#   30/04/24  14:13:47 - performance diagnostic profiler report generated in zCui/backup/backend_default_24_4_30_14_13_05/backend_default_globalLog.html
+#   30/04/24  14:13:49 - backend_default_zBuildClusteringSaver spawned 
+#   30/04/24  14:13:49 - backend_default_zBuildClusteringSaver normal task termination
+#   30/04/24  14:13:49 - backend_default_RTB_Front_End_Result_Analyzer spawned 
+#   30/04/24  14:13:49 - backend_default_RTB_Front_End_Result_Analyzer normal task termination
+#   30/04/24  14:13:49 - backend_default_zCoreBuildAnalyzer_Part_0 spawned 
+#   30/04/24  14:13:49 - backend_default_zCoreBuildAnalyzer_Part_0 normal task termination
+#   30/04/24  14:13:49 - Re-Compute Task Graph Node Rows
+#   30/04/24  14:13:49 - Re-Compute Task Graph Node Rows
+#   30/04/24  14:13:51 - backend_default_PostZCoreCompilationJoin spawned 
+#   30/04/24  14:13:52 - backend_default_PostZCoreCompilationJoin normal task termination
+#   30/04/24  14:13:52 - backend_default_PreParScriptBuilder spawned 
+#   30/04/24  14:13:52 - backend_default_PreParScriptBuilder normal task termination
+#   30/04/24  14:13:52 - Re-Compute Task Graph Node Rows
+#   30/04/24  14:13:52 - Re-Compute Task Graph Node Rows
+#   30/04/24  14:13:54 - backend_default_zPar normal task termination: skipped
+#   30/04/24  14:13:54 - backend_default_Design_FPGA_Dispatch spawned 
+#   30/04/24  14:13:54 - backend_default_U0_M0_F00_PaR_Controller added
+#   30/04/24  14:13:54 - backend_default_U0_M0_F00_FpgaPostProc added
+#   30/04/24  14:13:54 - backend_default_U0_M0_F00_zFpgaTiming added
+#   30/04/24  14:13:54 - backend_default_PostZFpgaTimingJoin added
+#   30/04/24  14:13:54 - backend_default_U0_M0_F08_PaR_Controller added
+#   30/04/24  14:13:54 - backend_default_U0_M0_F08_FpgaPostProc added
+#   30/04/24  14:13:54 - backend_default_U0_M0_F08_zFpgaTiming added
+#   30/04/24  14:13:54 - backend_default_zFW_U0_M0_IF added
+#   30/04/24  14:13:54 - backend_default_U0_M0_IF_PaR_Controller added
+#   30/04/24  14:13:54 - backend_default_RTB_FPGA_Dispatch_U0_M0_IF added
+#   30/04/24  14:13:54 - Re-Compute Task Graph Node Rows
+#   30/04/24  14:13:54 - backend_default_Design_FPGA_Dispatch normal task termination
+#   30/04/24  14:13:54 - performance diagnostic profiler report generated in zCui/backup/backend_default_24_4_30_14_13_05/backend_default_globalLog.html
+#   30/04/24  14:13:56 - backend_default_Intermediate_Profiling_Results_Analyzer_ZParAnalyzer normal task termination: skipped
+#   30/04/24  14:13:57 - backend_default_zFW_U0_M0_IF normal task termination: skipped
+#   30/04/24  14:13:57 - backend_default_U0_M0_F08_PaR_Controller normal task termination: skipped
+#   30/04/24  14:13:57 - backend_default_U0_M0_F00_PaR_Controller spawned 
+#   30/04/24  14:13:57 - backend_default_U0_M0_F00_Cleaning added
+#   30/04/24  14:13:57 - Re-Compute Task Graph Node Rows
+#   30/04/24  14:13:59 - backend_default_RTB_FPGA_Dispatch_U0_M0_IF spawned 
+#   30/04/24  14:13:59 - backend_default_RTB_FPGA_Dispatch_U0_M0_IF normal task termination
+#   30/04/24  14:13:59 - backend_default_U0_M0_F08_FpgaPostProc spawned (queue Zebu, 1 used) 
+#   30/04/24  14:13:59 - backend_default_U0_M0_F08_FpgaPostProc info : Pid: 9981
+#   30/04/24  14:13:59 - backend_default_U0_M0_F00_Cleaning spawned (queue Zebu, 2 used) 
+#   30/04/24  14:13:59 - backend_default_U0_M0_F00_Cleaning info : Pid: 9982
+#   30/04/24  14:13:59 - backend_default_U0_M0_IF_zFpgaTiming added
+#   30/04/24  14:13:59 - Re-Compute Task Graph Node Rows
+#   30/04/24  14:14:01 - backend_default_U0_M0_F08_FpgaPostProc normal task termination
+#   30/04/24  14:14:01 - backend_default_zTime normal task termination: skipped
+#   30/04/24  14:14:02 - backend_default_zDB_Global_Controller spawned 
+#   30/04/24  14:14:02 - backend_default_U0_M0_F08_zFpgaTiming normal task termination: skipped
+#   30/04/24  14:14:02 - backend_default_U0_M0_IF_PaR_Controller normal task termination: skipped
+#   30/04/24  14:14:02 - performance diagnostic profiler report generated in zCui/backup/backend_default_24_4_30_14_13_05/backend_default_globalLog.html
+#   30/04/24  14:14:04 - backend_default_U0_M0_IF_zFpgaTiming normal task termination: skipped
+#   30/04/24  14:14:10 - backend_default_U0_M0_F00_Cleaning normal task termination
+#   30/04/24  14:14:10 - backend_default_U0_M0_F00_Original added
+#   30/04/24  14:14:10 - Re-Compute Task Graph Node Rows
+#   30/04/24  14:14:12 - backend_default_U0_M0_F00_Original spawned (queue ZebuIse, 1 used out of 20) 
+#   30/04/24  14:14:12 - backend_default_U0_M0_F00_Original info : Pid: 10050
+#   30/04/24  14:17:19 - backend_default_U0_M0_F00_L0 added
+#   30/04/24  14:17:19 - backend_default_U0_M0_F00_L1 added
+#   30/04/24  14:17:19 - backend_default_U0_M0_F00_L2 added
+#   30/04/24  14:17:19 - backend_default_U0_M0_F00_L3 added
+#   30/04/24  14:17:19 - backend_default_U0_M0_F00_L4 added
+#   30/04/24  14:17:19 - backend_default_U0_M0_F00_L5 added
+#   30/04/24  14:17:19 - backend_default_U0_M0_F00_L6 added
+#   30/04/24  14:17:19 - backend_default_U0_M0_F00_L7 added
+#   30/04/24  14:17:19 - backend_default_U0_M0_F00_L8 added
+#   30/04/24  14:17:19 - backend_default_U0_M0_F00_L9 added
+#   30/04/24  14:17:19 - backend_default_U0_M0_F00_L10 added
+#   30/04/24  14:17:19 - backend_default_U0_M0_F00_L11 added
+#   30/04/24  14:17:19 - backend_default_U0_M0_F00_L12 added
+#   30/04/24  14:17:19 - backend_default_U0_M0_F00_L13 added
+#   30/04/24  14:17:19 - backend_default_U0_M0_F00_L14 added
+#   30/04/24  14:17:19 - backend_default_U0_M0_F00_L15 added
+#   30/04/24  14:17:19 - backend_default_U0_M0_F00_L16 added
+#   30/04/24  14:17:19 - Re-Compute Task Graph Node Rows
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L0 spawned (queue ZebuIse, 2 used out of 20) 
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L0 info : Pid: 14107
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L1 spawned (queue ZebuIse, 3 used out of 20) 
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L1 info : Pid: 14108
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L2 spawned (queue ZebuIse, 4 used out of 20) 
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L2 info : Pid: 14109
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L3 spawned (queue ZebuIse, 5 used out of 20) 
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L3 info : Pid: 14110
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L4 spawned (queue ZebuIse, 6 used out of 20) 
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L4 info : Pid: 14111
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L5 spawned (queue ZebuIse, 7 used out of 20) 
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L5 info : Pid: 14112
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L6 spawned (queue ZebuIse, 8 used out of 20) 
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L6 info : Pid: 14113
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L7 spawned (queue ZebuIse, 9 used out of 20) 
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L7 info : Pid: 14114
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L8 spawned (queue ZebuIse, 10 used out of 20) 
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L8 info : Pid: 14115
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L9 spawned (queue ZebuIse, 11 used out of 20) 
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L9 info : Pid: 14116
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L10 spawned (queue ZebuIse, 12 used out of 20) 
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L10 info : Pid: 14117
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L11 spawned (queue ZebuIse, 13 used out of 20) 
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L11 info : Pid: 14118
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L12 spawned (queue ZebuIse, 14 used out of 20) 
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L12 info : Pid: 14119
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L13 spawned (queue ZebuIse, 15 used out of 20) 
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L13 info : Pid: 14120
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L14 spawned (queue ZebuIse, 16 used out of 20) 
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L14 info : Pid: 14121
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L15 spawned (queue ZebuIse, 17 used out of 20) 
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L15 info : Pid: 14122
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L16 spawned (queue ZebuIse, 18 used out of 20) 
+#   30/04/24  14:17:21 - backend_default_U0_M0_F00_L16 info : Pid: 14123
+### 30/04/24  14:21:33 - backend_default_U0_M0_F00_Original abnormal task termination: Return status 2
+### 30/04/24  14:23:07 - backend_default_U0_M0_F00_L3 abnormal task termination: Return status 2
+### 30/04/24  14:23:07 - backend_default_U0_M0_F00_L13 abnormal task termination: Return status 2
+### 30/04/24  14:23:11 - backend_default_U0_M0_F00_L11 abnormal task termination: Return status 2
+### 30/04/24  14:23:11 - backend_default_U0_M0_F00_L8 abnormal task termination: Return status 2
+### 30/04/24  14:23:15 - backend_default_U0_M0_F00_L10 abnormal task termination: Return status 2
+### 30/04/24  14:23:15 - backend_default_U0_M0_F00_L14 abnormal task termination: Return status 2
+### 30/04/24  14:23:17 - backend_default_U0_M0_F00_L9 abnormal task termination: Return status 2
+### 30/04/24  14:23:17 - backend_default_U0_M0_F00_L5 abnormal task termination: Return status 2
+### 30/04/24  14:23:21 - backend_default_U0_M0_F00_L15 abnormal task termination: Return status 2
+### 30/04/24  14:23:23 - backend_default_U0_M0_F00_L4 abnormal task termination: Return status 2
+### 30/04/24  14:23:23 - backend_default_U0_M0_F00_L16 abnormal task termination: Return status 2
+### 30/04/24  14:23:23 - backend_default_U0_M0_F00_L1 abnormal task termination: Return status 2
+### 30/04/24  14:23:26 - backend_default_U0_M0_F00_L7 abnormal task termination: Return status 2
+### 30/04/24  14:23:26 - backend_default_U0_M0_F00_L2 abnormal task termination: Return status 2
+### 30/04/24  14:23:28 - backend_default_U0_M0_F00_L0 abnormal task termination: Return status 2
+### 30/04/24  14:23:28 - backend_default_U0_M0_F00_L6 abnormal task termination: Return status 2
+### 30/04/24  14:23:38 - backend_default_U0_M0_F00_L12 abnormal task termination: Return status 2
+### 30/04/24  14:23:40 - backend_default_U0_M0_F00_PaR_Controller abnormal task termination
+#   30/04/24  14:23:42 - backend_default_zDB_Global added
+#   30/04/24  14:23:42 - Re-Compute Task Graph Node Rows
+#   30/04/24  14:23:44 - backend_default_zDB_Global spawned (queue Zebu, 1 used) 
+#   30/04/24  14:23:44 - backend_default_zDB_Global info : Pid: 36584
+### 30/04/24  14:23:46 - backend_default_zDB_Global abnormal task termination: Return status 1
+### 30/04/24  14:23:48 - backend_default_zDB_Global_Controller abnormal task termination
+#   30/04/24  14:23:48 - Compilation Ended abnormally
+#   Network File System Parameters : Optimizer Method = 5 ; Number Of Retries = 120 ; Retry Delay = 1000
+#   Network File System Stats : Number of Optimizer Attempts = 0 ; Number Of Optimizer Failures = 0
+#   Network File System Stats : Number of Retry Cycles = 0 ; Number Of Failures = 0 ; Average Number of Retries = 0 ; Maximum Number Of Retries = 0
+#   Edif Check : Nb Of Checks 0; Nb Of Passed Checks 0; Nb Of Failed Checks 0; Nb Of Check Calls 0
+
+#   30/04/24  14:24:01 - performance diagnostic profiler report generated in zcui.work/zCui/backup/backend_default_24_4_30_14_13_05/backend_default_globalLog.html
+List of failed tasks:
+Name: Global DB Controller
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_zDB_Global_Controller.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L11
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L11.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L12
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L12.log
+Name: Controller
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_PaR_Controller.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L4
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L4.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: Original
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_Original.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L7
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L7.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L9
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L9.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L10
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L10.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L0
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L0.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L3
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L3.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L8
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L8.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L15
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L15.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L16
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L16.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L13
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L13.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L14
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L14.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L6
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L6.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L1
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L1.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L5
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L5.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L2
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L2.log
+Name: Create Global DB
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_zDB_Global.log
+  Log (zDb script): zcui.work/backend_default/zDB_final_zcui.tcl
+________________________________________________________________________________
+
+                                    ZeBu (R)
+                          ZeBu Compiler User Interface
+
+              Version Q-2020.03-SP1-4 for linux64 - Oct 18, 2022 
+
+                    Copyright (c) 2002 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+
+# Build Date : Oct 18 2022 - 00:41:38
+
+#   Project filename: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/utf_generatefiles/gen_ufe_project.zpf
+
+#   01/05/24  15:59:44 - Re-Compute Task Graph Node Rows
+#   01/05/24  15:59:44 - backend_default_Project_Analyzer added
+#   01/05/24  15:59:44 - backend_default_SingleBackend_Compilation_Checker added
+#   01/05/24  15:59:44 - Re-Compute Task Graph Node Rows
+#   01/05/24  15:59:44 - backend_default_Project_Analyzer spawned 
+#   01/05/24  15:59:44 - backend_default_Project_Analyzer normal task termination
+#   01/05/24  15:59:44 - backend_default_BackendEntry added
+#   01/05/24  15:59:44 - vcs_splitter_VCS_Task_Builder added
+#   01/05/24  15:59:44 - Post_Vcs_Task_Builder added
+#   01/05/24  15:59:44 - VCS_Task_Analyzer added
+#   01/05/24  15:59:44 - backend_default_Intermediate_Profiling_Results_Analyzer_VCSAnalyzer added
+#   01/05/24  15:59:44 - Target_Config added
+#   01/05/24  15:59:44 - Target_Config_Analyzer added
+#   01/05/24  15:59:44 - design_Fs_Macro_Script_Builder added
+#   01/05/24  15:59:44 - design_Fs_Macro added
+#   01/05/24  15:59:44 - Vcs_Version_Checker added
+#   01/05/24  15:59:44 - FE_Version_Checker added
+#   01/05/24  15:59:44 - BE_Version_Checker added
+#   01/05/24  15:59:44 - Re-Compute Task Graph Node Rows
+#   01/05/24  15:59:46 - BE_Version_Checker spawned (queue ZebuLocal, 1 used) 
+#   01/05/24  15:59:46 - BE_Version_Checker info : Pid: 1507
+#   01/05/24  15:59:46 - FE_Version_Checker spawned (queue ZebuLocal, 2 used) 
+#   01/05/24  15:59:46 - FE_Version_Checker info : Pid: 1508
+#   01/05/24  15:59:46 - Vcs_Version_Checker spawned (queue ZebuLocal, 3 used) 
+#   01/05/24  15:59:46 - Vcs_Version_Checker info : Pid: 1509
+#   01/05/24  15:59:48 - BE_Version_Checker normal task termination
+#   01/05/24  15:59:48 - FE_Version_Checker normal task termination
+#   01/05/24  15:59:48 - Vcs_Version_Checker normal task termination
+#   01/05/24  15:59:48 - Target_Config spawned (queue Zebu, 1 used) 
+#   01/05/24  15:59:48 - Target_Config info : Pid: 1658
+#   01/05/24  15:59:50 - Target_Config normal task termination
+#   01/05/24  15:59:50 - Target_Config_Analyzer spawned 
+#   01/05/24  15:59:50 - Target_Config_Analyzer normal task termination
+#   01/05/24  15:59:50 - backend_default_zTopBuild added
+#   01/05/24  15:59:50 - backend_default_zTopBuildResultAnalyzer added
+#   01/05/24  15:59:50 - backend_default_PreParScriptBuilder added
+#   01/05/24  15:59:50 - backend_default_PostZCoreCompilationJoin added
+#   01/05/24  15:59:50 - backend_default_zPar added
+#   01/05/24  15:59:50 - backend_default_Intermediate_Profiling_Results_Analyzer_ZTopBuildAnalyzer added
+#   01/05/24  15:59:50 - backend_default_Design_FPGA_Dispatch added
+#   01/05/24  15:59:50 - backend_default_PostFpgaCompilationJoin added
+#   01/05/24  15:59:50 - backend_default_FpgaResultAnalyzer added
+#   01/05/24  15:59:50 - backend_default_zTime added
+#   01/05/24  15:59:50 - backend_default_Intermediate_Profiling_Results_Analyzer_ZParAnalyzer added
+#   01/05/24  15:59:50 - backend_default_zDB_Global_Controller added
+#   01/05/24  15:59:50 - backend_default_Build_ZDBPostProc_Script added
+#   01/05/24  15:59:50 - backend_default_preparezTimeFpga added
+#   01/05/24  15:59:50 - backend_default_zTimeFpga added
+#   01/05/24  15:59:50 - backend_default_zAuditReport added
+#   01/05/24  15:59:50 - Re-Compute Task Graph Node Rows
+#   01/05/24  15:59:52 - design_Fs_Macro_Script_Builder spawned 
+#   01/05/24  15:59:52 - design_Fs_Macro_Script_Builder normal task termination
+#   01/05/24  15:59:54 - design_Fs_Macro normal task termination: skipped
+#   01/05/24  15:59:56 - vcs_splitter_VCS_Task_Builder spawned (queue Zebu, 1 used) 
+#   01/05/24  15:59:56 - vcs_splitter_VCS_Task_Builder info : Pid: 1697
+#   01/05/24  16:00:02 - vcs_splitter_VCS_Task_Builder normal task termination
+#   01/05/24  16:00:02 - Post_Vcs_Task_Builder spawned 
+#   01/05/24  16:00:02 - Post_Vcs_Task_Builder normal task termination
+#   01/05/24  16:00:03 - VCS_Task_Analyzer spawned 
+#   01/05/24  16:00:06 - Verdi_Compilation added
+#   01/05/24  16:00:06 - RhinoFsdb_Builder added
+#   01/05/24  16:00:06 - stable_design_Default_RTL_Group_Synthesis added
+#   01/05/24  16:00:06 - stable_design_Default_RTL_Group_Synthesis_design_Default_RTL_Group_stable_analyzer added
+#   01/05/24  16:00:06 - Re-Compute Task Graph Node Rows
+#   01/05/24  16:00:06 - VCS_Task_Analyzer normal task termination
+#   01/05/24  16:00:06 - backend_default_Intermediate_Profiling_Results_Analyzer_VCSAnalyzer spawned (queue ZebuLocal, 1 used) 
+#   01/05/24  16:00:06 - backend_default_Intermediate_Profiling_Results_Analyzer_VCSAnalyzer info : Pid: 2409
+#   01/05/24  16:00:08 - backend_default_Intermediate_Profiling_Results_Analyzer_VCSAnalyzer normal task termination
+#   01/05/24  16:00:08 - stable_design_Default_RTL_Group_Synthesis normal task termination: skipped
+#   01/05/24  16:00:08 - RhinoFsdb_Builder spawned (queue Zebu, 1 used) 
+#   01/05/24  16:00:08 - RhinoFsdb_Builder info : Pid: 2422
+#   01/05/24  16:00:08 - Verdi_Compilation spawned (queue Zebu, 2 used) 
+#   01/05/24  16:00:08 - Verdi_Compilation info : Pid: 2423
+#   01/05/24  16:00:10 - RhinoFsdb_Builder normal task termination
+#   01/05/24  16:00:10 - Verdi_Compilation normal task termination
+#   01/05/24  16:00:10 - stable_design_Default_RTL_Group_Synthesis_design_Default_RTL_Group_stable_analyzer spawned 
+#   01/05/24  16:00:10 - stable_design_Default_RTL_Group_Synthesis_design_Default_RTL_Group_stable_analyzer normal task termination
+#   01/05/24  16:00:10 - design_Default_RTL_Group_Memory_ram_zMem added
+#   01/05/24  16:00:10 - design_Default_RTL_Group_Memory_rom_zMem added
+#   01/05/24  16:00:10 - Re-Compute Task Graph Node Rows
+#   01/05/24  16:00:12 - design_Default_RTL_Group_Memory_ram_zMem normal task termination: skipped
+#   01/05/24  16:00:12 - design_Default_RTL_Group_Memory_rom_zMem normal task termination: skipped
+#   01/05/24  16:00:12 - backend_default_BackendEntry spawned 
+#   01/05/24  16:00:13 - Re-Compute Task Graph Node Rows
+#   01/05/24  16:00:13 - backend_default_zDveTool added
+#   01/05/24  16:00:13 - backend_default_zEquiGenerator added
+#   01/05/24  16:00:13 - backend_default_zRtlToEqui added
+#   01/05/24  16:00:13 - backend_default_zSimuFsdbHeader added
+#   01/05/24  16:00:13 - backend_default_zSimzilla added
+#   01/05/24  16:00:13 - backend_default_zGraphGenerator added
+#   01/05/24  16:00:13 - backend_default_RTL_DB_Indexer added
+#   01/05/24  16:00:13 - Re-Compute Task Graph Node Rows
+#   01/05/24  16:00:13 - backend_default_RTL_DB_Link added
+#   01/05/24  16:00:13 - backend_default_RTL_DB_RunTime added
+#   01/05/24  16:00:13 - backend_default_Vcs_Link added
+#   01/05/24  16:00:13 - backend_default_OptionsDbProc added
+#   01/05/24  16:00:13 - Re-Compute Task Graph Node Rows
+#   01/05/24  16:00:13 - backend_default_BackendEntry normal task termination
+#   01/05/24  16:00:13 - Re-Compute Task Graph Node Rows
+#   01/05/24  16:00:13 - backend_default_Intermediate_Profiling_Results_Analyzer_BackendEntry added
+#   01/05/24  16:00:13 - Re-Compute Task Graph Node Rows
+#   01/05/24  16:00:13 - performance diagnostic profiler report generated in zCui/backup/backend_default_24_5_1_15_59_43/backend_default_globalLog.html
+#   01/05/24  16:00:15 - backend_default_OptionsDbProc normal task termination: skipped
+#   01/05/24  16:00:15 - backend_default_Intermediate_Profiling_Results_Analyzer_BackendEntry normal task termination: skipped
+#   01/05/24  16:00:15 - backend_default_zDveTool normal task termination: skipped
+#   01/05/24  16:00:15 - backend_default_Vcs_Link normal task termination: skipped
+#   01/05/24  16:00:15 - backend_default_RTL_DB_Indexer spawned (queue Zebu, 1 used) 
+#   01/05/24  16:00:15 - backend_default_RTL_DB_Indexer info : Pid: 2479
+#   01/05/24  16:00:17 - backend_default_RTL_DB_Indexer normal task termination
+#   01/05/24  16:00:17 - backend_default_RTL_DB_Link spawned (queue Zebu, 1 used) 
+#   01/05/24  16:00:17 - backend_default_RTL_DB_Link info : Pid: 2534
+#   01/05/24  16:00:20 - backend_default_RTL_DB_Link normal task termination
+#   01/05/24  16:00:20 - backend_default_zTopBuild normal task termination: skipped
+#   01/05/24  16:00:20 - backend_default_RTL_DB_RunTime spawned (queue Zebu, 1 used) 
+#   01/05/24  16:00:20 - backend_default_RTL_DB_RunTime info : Pid: 2551
+#   01/05/24  16:00:20 - performance diagnostic profiler report generated in zCui/backup/backend_default_24_5_1_15_59_43/backend_default_globalLog.html
+#   01/05/24  16:00:22 - backend_default_RTL_DB_RunTime normal task termination
+#   01/05/24  16:00:22 - backend_default_zTopBuildResultAnalyzer spawned 
+#   01/05/24  16:00:22 - backend_default_zBuildClusteringSaver added
+#   01/05/24  16:00:22 - backend_default_zCoreBuild_Part_0 added
+#   01/05/24  16:00:22 - backend_default_zCoreBuildAnalyzer_Part_0 added
+#   01/05/24  16:00:22 - backend_default_RTB_Front_End added
+#   01/05/24  16:00:22 - backend_default_RTB_Front_End_Result_Analyzer added
+#   01/05/24  16:00:22 - Re-Compute Task Graph Node Rows
+#   01/05/24  16:00:22 - backend_default_zTopBuildResultAnalyzer normal task termination
+#   01/05/24  16:00:22 - backend_default_zSimuFsdbHeader normal task termination: skipped
+#   01/05/24  16:00:22 - backend_default_Intermediate_Profiling_Results_Analyzer_ZTopBuildAnalyzer normal task termination: skipped
+#   01/05/24  16:00:22 - backend_default_zEquiGenerator normal task termination: skipped
+#   01/05/24  16:00:22 - backend_default_zRtlToEqui normal task termination: skipped
+#   01/05/24  16:00:24 - backend_default_zSimzilla normal task termination: skipped
+#   01/05/24  16:00:24 - backend_default_zGraphGenerator normal task termination: skipped
+#   01/05/24  16:00:24 - backend_default_zCoreBuild_Part_0 normal task termination: skipped
+#   01/05/24  16:00:24 - backend_default_RTB_Front_End normal task termination: skipped
+#   01/05/24  16:00:24 - performance diagnostic profiler report generated in zCui/backup/backend_default_24_5_1_15_59_43/backend_default_globalLog.html
+#   01/05/24  16:00:26 - backend_default_zCoreBuildAnalyzer_Part_0 spawned 
+#   01/05/24  16:00:28 - backend_default_zCoreBuildAnalyzer_Part_0 normal task termination
+#   01/05/24  16:00:28 - backend_default_PostZCoreCompilationJoin spawned 
+#   01/05/24  16:00:29 - backend_default_PostZCoreCompilationJoin normal task termination
+#   01/05/24  16:00:29 - backend_default_RTB_Front_End_Result_Analyzer spawned 
+#   01/05/24  16:00:29 - backend_default_RTB_Front_End_Result_Analyzer normal task termination
+#   01/05/24  16:00:29 - backend_default_zBuildClusteringSaver spawned 
+#   01/05/24  16:00:29 - backend_default_zBuildClusteringSaver normal task termination
+#   01/05/24  16:00:29 - Re-Compute Task Graph Node Rows
+#   01/05/24  16:00:29 - Re-Compute Task Graph Node Rows
+#   01/05/24  16:00:31 - backend_default_PreParScriptBuilder spawned 
+#   01/05/24  16:00:31 - backend_default_PreParScriptBuilder normal task termination
+#   01/05/24  16:00:31 - backend_default_zPar normal task termination: skipped
+#   01/05/24  16:00:31 - backend_default_Design_FPGA_Dispatch spawned 
+#   01/05/24  16:00:31 - backend_default_U0_M0_F00_PaR_Controller added
+#   01/05/24  16:00:31 - backend_default_U0_M0_F00_FpgaPostProc added
+#   01/05/24  16:00:31 - backend_default_U0_M0_F00_zFpgaTiming added
+#   01/05/24  16:00:31 - backend_default_PostZFpgaTimingJoin added
+#   01/05/24  16:00:31 - backend_default_U0_M0_F08_PaR_Controller added
+#   01/05/24  16:00:31 - backend_default_U0_M0_F08_FpgaPostProc added
+#   01/05/24  16:00:31 - backend_default_U0_M0_F08_zFpgaTiming added
+#   01/05/24  16:00:31 - backend_default_zFW_U0_M0_IF added
+#   01/05/24  16:00:31 - backend_default_U0_M0_IF_PaR_Controller added
+#   01/05/24  16:00:31 - backend_default_RTB_FPGA_Dispatch_U0_M0_IF added
+#   01/05/24  16:00:31 - Re-Compute Task Graph Node Rows
+#   01/05/24  16:00:31 - backend_default_Design_FPGA_Dispatch normal task termination
+#   01/05/24  16:00:31 - performance diagnostic profiler report generated in zCui/backup/backend_default_24_5_1_15_59_43/backend_default_globalLog.html
+#   01/05/24  16:00:33 - backend_default_Intermediate_Profiling_Results_Analyzer_ZParAnalyzer normal task termination: skipped
+#   01/05/24  16:00:34 - backend_default_U0_M0_F08_PaR_Controller normal task termination: skipped
+#   01/05/24  16:00:34 - backend_default_zFW_U0_M0_IF normal task termination: skipped
+#   01/05/24  16:00:35 - backend_default_U0_M0_F00_PaR_Controller spawned 
+#   01/05/24  16:00:35 - backend_default_U0_M0_F00_Cleaning added
+#   01/05/24  16:00:35 - Re-Compute Task Graph Node Rows
+#   01/05/24  16:00:37 - backend_default_RTB_FPGA_Dispatch_U0_M0_IF spawned 
+#   01/05/24  16:00:37 - backend_default_RTB_FPGA_Dispatch_U0_M0_IF normal task termination
+#   01/05/24  16:00:37 - backend_default_U0_M0_F08_FpgaPostProc spawned (queue Zebu, 1 used) 
+#   01/05/24  16:00:37 - backend_default_U0_M0_F08_FpgaPostProc info : Pid: 2635
+#   01/05/24  16:00:37 - backend_default_U0_M0_F00_Cleaning spawned (queue Zebu, 2 used) 
+#   01/05/24  16:00:37 - backend_default_U0_M0_F00_Cleaning info : Pid: 2636
+#   01/05/24  16:00:37 - backend_default_U0_M0_IF_zFpgaTiming added
+#   01/05/24  16:00:37 - Re-Compute Task Graph Node Rows
+#   01/05/24  16:00:39 - backend_default_zDB_Global_Controller spawned 
+#   01/05/24  16:00:39 - backend_default_zTime normal task termination: skipped
+#   01/05/24  16:00:39 - backend_default_U0_M0_F08_zFpgaTiming normal task termination: skipped
+#   01/05/24  16:00:39 - backend_default_U0_M0_IF_PaR_Controller normal task termination: skipped
+#   01/05/24  16:00:40 - performance diagnostic profiler report generated in zCui/backup/backend_default_24_5_1_15_59_43/backend_default_globalLog.html
+#   01/05/24  16:00:42 - backend_default_U0_M0_F08_FpgaPostProc normal task termination
+#   01/05/24  16:00:42 - backend_default_U0_M0_IF_zFpgaTiming normal task termination: skipped
+#   01/05/24  16:00:46 - backend_default_U0_M0_F00_Cleaning normal task termination
+#   01/05/24  16:00:46 - backend_default_U0_M0_F00_Original added
+#   01/05/24  16:00:46 - Re-Compute Task Graph Node Rows
+#   01/05/24  16:00:48 - backend_default_U0_M0_F00_Original spawned (queue ZebuIse, 1 used out of 20) 
+#   01/05/24  16:00:48 - backend_default_U0_M0_F00_Original info : Pid: 2699
+#   01/05/24  16:03:55 - backend_default_U0_M0_F00_L0 added
+#   01/05/24  16:03:55 - backend_default_U0_M0_F00_L1 added
+#   01/05/24  16:03:55 - backend_default_U0_M0_F00_L2 added
+#   01/05/24  16:03:55 - backend_default_U0_M0_F00_L3 added
+#   01/05/24  16:03:55 - backend_default_U0_M0_F00_L4 added
+#   01/05/24  16:03:55 - backend_default_U0_M0_F00_L5 added
+#   01/05/24  16:03:55 - backend_default_U0_M0_F00_L6 added
+#   01/05/24  16:03:55 - backend_default_U0_M0_F00_L7 added
+#   01/05/24  16:03:55 - backend_default_U0_M0_F00_L8 added
+#   01/05/24  16:03:55 - backend_default_U0_M0_F00_L9 added
+#   01/05/24  16:03:55 - backend_default_U0_M0_F00_L10 added
+#   01/05/24  16:03:55 - backend_default_U0_M0_F00_L11 added
+#   01/05/24  16:03:55 - backend_default_U0_M0_F00_L12 added
+#   01/05/24  16:03:55 - backend_default_U0_M0_F00_L13 added
+#   01/05/24  16:03:55 - backend_default_U0_M0_F00_L14 added
+#   01/05/24  16:03:55 - backend_default_U0_M0_F00_L15 added
+#   01/05/24  16:03:55 - backend_default_U0_M0_F00_L16 added
+#   01/05/24  16:03:55 - Re-Compute Task Graph Node Rows
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L0 spawned (queue ZebuIse, 2 used out of 20) 
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L0 info : Pid: 7348
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L1 spawned (queue ZebuIse, 3 used out of 20) 
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L1 info : Pid: 7349
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L2 spawned (queue ZebuIse, 4 used out of 20) 
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L2 info : Pid: 7350
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L3 spawned (queue ZebuIse, 5 used out of 20) 
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L3 info : Pid: 7351
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L4 spawned (queue ZebuIse, 6 used out of 20) 
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L4 info : Pid: 7352
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L5 spawned (queue ZebuIse, 7 used out of 20) 
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L5 info : Pid: 7353
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L6 spawned (queue ZebuIse, 8 used out of 20) 
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L6 info : Pid: 7354
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L7 spawned (queue ZebuIse, 9 used out of 20) 
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L7 info : Pid: 7355
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L8 spawned (queue ZebuIse, 10 used out of 20) 
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L8 info : Pid: 7356
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L9 spawned (queue ZebuIse, 11 used out of 20) 
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L9 info : Pid: 7357
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L10 spawned (queue ZebuIse, 12 used out of 20) 
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L10 info : Pid: 7358
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L11 spawned (queue ZebuIse, 13 used out of 20) 
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L11 info : Pid: 7359
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L12 spawned (queue ZebuIse, 14 used out of 20) 
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L12 info : Pid: 7360
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L13 spawned (queue ZebuIse, 15 used out of 20) 
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L13 info : Pid: 7361
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L14 spawned (queue ZebuIse, 16 used out of 20) 
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L14 info : Pid: 7362
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L15 spawned (queue ZebuIse, 17 used out of 20) 
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L15 info : Pid: 7363
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L16 spawned (queue ZebuIse, 18 used out of 20) 
+#   01/05/24  16:03:57 - backend_default_U0_M0_F00_L16 info : Pid: 7364
+### 01/05/24  16:08:07 - backend_default_U0_M0_F00_Original abnormal task termination: Return status 2
+### 01/05/24  16:09:49 - backend_default_U0_M0_F00_L3 abnormal task termination: Return status 2
+### 01/05/24  16:09:53 - backend_default_U0_M0_F00_L11 abnormal task termination: Return status 2
+### 01/05/24  16:09:55 - backend_default_U0_M0_F00_L5 abnormal task termination: Return status 2
+### 01/05/24  16:10:02 - backend_default_U0_M0_F00_L9 abnormal task termination: Return status 2
+### 01/05/24  16:10:02 - backend_default_U0_M0_F00_L16 abnormal task termination: Return status 2
+### 01/05/24  16:10:02 - backend_default_U0_M0_F00_L8 abnormal task termination: Return status 2
+### 01/05/24  16:10:04 - backend_default_U0_M0_F00_L15 abnormal task termination: Return status 2
+### 01/05/24  16:10:04 - backend_default_U0_M0_F00_L13 abnormal task termination: Return status 2
+### 01/05/24  16:10:08 - backend_default_U0_M0_F00_L7 abnormal task termination: Return status 2
+### 01/05/24  16:10:08 - backend_default_U0_M0_F00_L4 abnormal task termination: Return status 2
+### 01/05/24  16:10:10 - backend_default_U0_M0_F00_L2 abnormal task termination: Return status 2
+### 01/05/24  16:10:10 - backend_default_U0_M0_F00_L10 abnormal task termination: Return status 2
+### 01/05/24  16:10:12 - backend_default_U0_M0_F00_L6 abnormal task termination: Return status 2
+### 01/05/24  16:10:14 - backend_default_U0_M0_F00_L0 abnormal task termination: Return status 2
+### 01/05/24  16:10:14 - backend_default_U0_M0_F00_L14 abnormal task termination: Return status 2
+### 01/05/24  16:10:16 - backend_default_U0_M0_F00_L1 abnormal task termination: Return status 2
+### 01/05/24  16:10:30 - backend_default_U0_M0_F00_L12 abnormal task termination: Return status 2
+### 01/05/24  16:10:33 - backend_default_U0_M0_F00_PaR_Controller abnormal task termination
+#   01/05/24  16:10:35 - backend_default_zDB_Global added
+#   01/05/24  16:10:35 - Re-Compute Task Graph Node Rows
+#   01/05/24  16:10:37 - backend_default_zDB_Global spawned (queue Zebu, 1 used) 
+#   01/05/24  16:10:37 - backend_default_zDB_Global info : Pid: 30010
+### 01/05/24  16:10:39 - backend_default_zDB_Global abnormal task termination: Return status 1
+### 01/05/24  16:10:41 - backend_default_zDB_Global_Controller abnormal task termination
+#   01/05/24  16:10:41 - Compilation Ended abnormally
+#   Network File System Parameters : Optimizer Method = 5 ; Number Of Retries = 120 ; Retry Delay = 1000
+#   Network File System Stats : Number of Optimizer Attempts = 0 ; Number Of Optimizer Failures = 0
+#   Network File System Stats : Number of Retry Cycles = 0 ; Number Of Failures = 0 ; Average Number of Retries = 0 ; Maximum Number Of Retries = 0
+#   Edif Check : Nb Of Checks 0; Nb Of Passed Checks 0; Nb Of Failed Checks 0; Nb Of Check Calls 0
+
+#   01/05/24  16:10:52 - performance diagnostic profiler report generated in zcui.work/zCui/backup/backend_default_24_5_1_15_59_43/backend_default_globalLog.html
+List of failed tasks:
+Name: Global DB Controller
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_zDB_Global_Controller.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: Original
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_Original.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L0
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L0.log
+Name: Controller
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_PaR_Controller.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L9
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L9.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L15
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L15.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L16
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L16.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L7
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L7.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L4
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L4.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L1
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L1.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L2
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L2.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L3
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L3.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L10
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L10.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L13
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L13.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L14
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L14.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L8
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L8.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L11
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L11.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L12
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L12.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L6
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L6.log
+Name: Backend: default backend Unit: 0 Module: 0 FPGA: F00 (U0_M0_F0) Id: L5
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_U0_M0_F00_L5.log
+Name: Create Global DB
+  Log: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/zCui/log/backend_default_zDB_Global.log
+  Log (zDb script): zcui.work/backend_default/zDB_final_zcui.tcl

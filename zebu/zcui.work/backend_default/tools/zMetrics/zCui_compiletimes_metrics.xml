@@ -17,15 +17,15 @@
 	</Header>
 	<Row>
 		<part>Front end</part>
-		<cputime>7</cputime>
+		<cputime>6</cputime>
 		<wallclock>28</wallclock>
-		<cputime_with_grid>22</cputime_with_grid>
+		<cputime_with_grid>20</cputime_with_grid>
 	</Row>
 	<Row>
 		<part>Back end</part>
-		<cputime>6522</cputime>
-		<wallclock>626</wallclock>
-		<cputime_with_grid>6577</cputime_with_grid>
+		<cputime>6689</cputime>
+		<wallclock>627</wallclock>
+		<cputime_with_grid>6745</cputime_with_grid>
 	</Row>
 </Table>
 </Metrics>

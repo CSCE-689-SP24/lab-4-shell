@@ -14,6 +14,10 @@ top.u_stb.u_rom.mem -> top.u_stb.u_rom.mem -> rom_ZMEM_mem
 top.u_stb.u0_proba -> top.u_stb.u0_proba -> proba
 top.u_stb.u_clk0 -> top.u_stb.u_clk0 -> zceiClockPort
 top.u_stb.u_clk1 -> top.u_stb.u_clk1 -> zceiClockPort
+top.u_stb.u_clk0 -> top.u_stb.u_clk0 -> zceiClockPort
+top.u_stb.u_clk1 -> top.u_stb.u_clk1 -> zceiClockPort
+top.u_stb.u_clk0 -> top.u_stb.u_clk0 -> zceiClockPort
+top.u_stb.u_clk1 -> top.u_stb.u_clk1 -> zceiClockPort
 top.u_dut -> top.u_dut -> dut
 top.u_dut.u_parity -> top.u_dut.u_parity -> parity
 top.u_dut.u_fifo -> top.u_dut.u_fifo -> fifo_0000

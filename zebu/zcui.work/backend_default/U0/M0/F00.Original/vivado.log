@@ -2,8 +2,8 @@
 # Vivado v2019.1_EP06_159265 (64-bit)
 # SW Build (by stepheny) on Fri Oct 11 16:37:07 PDT 2019
 # IP Build 2548770 on Wed May 29 13:01:34 MDT 2019
-# Start of session at: Wed Apr 24 06:36:19 2024
-# Process ID: 27312
+# Start of session at: Wed May  1 16:01:38 2024
+# Process ID: 5902
 # Current directory: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/backend_default/U0/M0/F00.Original
 # Command line: vivado -mode batch -notrace -source /opt/coe/synopsys/zebu/Q-2020.03-SP1-4/etc/vivado_v7/compil_vivado_v7.tcl -tempDir tmp_dcp
 # Log file: /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/backend_default/U0/M0/F00.Original/vivado.log
@@ -67,7 +67,7 @@ INFO: [Project 1-570] Preparing netlist for logic optimization
 Parsing XDC File [/home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/backend_default/U0/M0/F00.Original/no_dont_touch.xdc]
 Finished Parsing XDC File [/home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/backend_default/U0/M0/F00.Original/no_dont_touch.xdc]
 INFO: [Opt 31-138] Pushed 8 inverter(s) to 8 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3458.570 ; gain = 0.000 ; free physical = 170725 ; free virtual = 189974
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3458.754 ; gain = 0.000 ; free physical = 169656 ; free virtual = 189910
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2696 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 68 instances
@@ -95,7 +95,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 11 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:14 . Memory (MB): peak = 3458.570 ; gain = 1931.602 ; free physical = 170725 ; free virtual = 189974
+link_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:09 . Memory (MB): peak = 3458.754 ; gain = 1935.570 ; free physical = 169656 ; free virtual = 189910
 INFO: [Common 17-600] The following parameters have non-default value.
 general.maxThreads, tcl.collectionResultDisplayLimit, tcl.statsThreshold
 [SW_FPGA] - INFO : Link design ended successfully
@@ -113,11 +113,11 @@ Finished Parsing XDC File [/home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-
 #################################################################################
 ##                 VIVADO : STEP NETLIST_ANALYSIS_PREPROCESSING                ##
 #################################################################################
-##  phase:linked_analysis  -  Host: csce-quinn-s1.engr.tamu.edu  -  MemFree: 166 GB  -  LoadAverage (5s|5min|15min / NBcpu): 0.80|0.44|0.30 / 40  MemAvail: 181 GB
+##  phase:linked_analysis  -  Host: csce-quinn-s1.engr.tamu.edu  -  MemFree: 165 GB  -  LoadAverage (5s|5min|15min / NBcpu): 0.77|0.33|0.16 / 40  MemAvail: 180 GB
 
 [SW_FPGA] - INFO : start netlist_analys_preproc phase
-netlist_analys_preproc start time: 1713958662
-netlist_analys_preproc start date: Wed Apr 24 06:37:42 CDT 2024
+netlist_analys_preproc start time: 1714597376
+netlist_analys_preproc start date: Wed May 01 16:02:56 CDT 2024
 
 
 
@@ -266,11 +266,11 @@ wc_ip_top/wrapper/fwc_ip_hs_cluster_32[0]  : count=50818   ioPort=12461
 #################################################################################
 ##                             VIVADO : STEP READ_CONSTRAINTS                  ##
 #################################################################################
-##  phase:constraints  -  Host: csce-quinn-s1.engr.tamu.edu  -  MemFree: 166 GB  -  LoadAverage (5s|5min|15min / NBcpu): 0.83|0.46|0.31 / 40  MemAvail: 181 GB
+##  phase:constraints  -  Host: csce-quinn-s1.engr.tamu.edu  -  MemFree: 165 GB  -  LoadAverage (5s|5min|15min / NBcpu): 0.79|0.35|0.16 / 40  MemAvail: 180 GB
 
 [SW_FPGA] - INFO : start read_constraints phase
-read_constraints start time: 1713958671
-read_constraints start date: Wed Apr 24 06:37:51 CDT 2024
+read_constraints start time: 1714597385
+read_constraints start date: Wed May 01 16:03:05 CDT 2024
 
 [SW_FPGA] - PROC : zVivado_MDTMX_DisableSocketPblock done
 Parsing XDC File [/home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/backend_default/U0/M0/F00.Original/design.xdc]
@@ -304,11 +304,11 @@ Finished Parsing XDC File [/home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-
 #################################################################################
 ##                             VIVADO : STEP OPT_DESIGN                        ##
 #################################################################################
-##  phase:opt  -  Host: csce-quinn-s1.engr.tamu.edu  -  MemFree: 165 GB  -  LoadAverage (5s|5min|15min / NBcpu): 0.75|0.48|0.32 / 40  MemAvail: 180 GB
+##  phase:opt  -  Host: csce-quinn-s1.engr.tamu.edu  -  MemFree: 164 GB  -  LoadAverage (5s|5min|15min / NBcpu): 0.80|0.40|0.19 / 40  MemAvail: 179 GB
 
 [SW_FPGA] - INFO : start opt_design phase
-opt_design start time: 1713958706
-opt_design start date: Wed Apr 24 06:38:26 CDT 2024
+opt_design start time: 1714597421
+opt_design start date: Wed May 01 16:03:41 CDT 2024
 
 [SW_FPGA] - INFO : Vivado opt_design_options [-verbose -retarget -propconst -sweep ]
 Command: opt_design -verbose -retarget -propconst -sweep
@@ -330,15 +330,15 @@ Resolution: Check the status of your licenses in the Vivado License Manager. For
 [SW_FPGA] - ERROR : *************************************************
 [SW_FPGA] - INFO : Generating post timing
 [SW_FPGA] - INFO : Generating post checkpoints
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4327.324 ; gain = 0.000 ; free physical = 169810 ; free virtual = 189059
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4326.547 ; gain = 0.000 ; free physical = 168538 ; free virtual = 188792
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.08 . Memory (MB): peak = 4372.219 ; gain = 12.883 ; free physical = 169788 ; free virtual = 189042
+Write XDEF Complete: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.11 . Memory (MB): peak = 4371.441 ; gain = 12.883 ; free physical = 168514 ; free virtual = 188772
 INFO: [Common 17-1381] The checkpoint '/home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/backend_default/U0/M0/F00.Original/fpga_reports/vivado/dcp_KO_in_opt_design.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:02:01 ; elapsed = 00:01:57 . Memory (MB): peak = 4624.887 ; gain = 297.562 ; free physical = 151686 ; free virtual = 171049
+write_checkpoint: Time (s): cpu = 00:02:01 ; elapsed = 00:01:55 . Memory (MB): peak = 4609.109 ; gain = 282.562 ; free physical = 155634 ; free virtual = 176001
 
 [SW_FPGA] - ERROR : ***************************************************
 [SW_FPGA] - ERROR : ********* ERROR in opt_design phase  ************
@@ -352,7 +352,7 @@ write_checkpoint: Time (s): cpu = 00:02:01 ; elapsed = 00:01:57 . Memory (MB): p
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1_EP06_159265 (lin64) Build 0 Fri Oct 11 16:37:07 PDT 2019
-| Date         : Wed Apr 24 06:40:30 2024
+| Date         : Wed May  1 16:05:43 2024
 | Host         : csce-quinn-s1.engr.tamu.edu running 64-bit Red Hat Enterprise Linux Server release 7.9 (Maipo)
 | Command      : report_utilization
 | Design       : fx_top
@@ -640,4 +640,4 @@ Table of Contents
 
 
 /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/backend_default/U0/M0/F00.Original
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 24 06:40:30 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed May  1 16:05:43 2024...

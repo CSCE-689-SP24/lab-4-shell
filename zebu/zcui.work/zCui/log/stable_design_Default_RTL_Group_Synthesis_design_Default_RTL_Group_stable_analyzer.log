@@ -7,6 +7,9 @@ Module: clkg
 Module: dut
   Xcui file design/synth_Default_RTL_Group/xcui/dut.xcui is read
   Checksum value 2f4107df48f6cd8ddcb844600c8042d285b368f1f5a3f1e5af3325f861f642eb49ba291d5ccf3ef05d1647b3c0ec63eebfa7437c27b8648450dae24419689bef
+Module: fifo_0000
+  Xcui file design/synth_Default_RTL_Group/xcui/fifo_0000.xcui is read
+  Checksum value 4e19bb72bd5d468078ff18a69127ad5904021966be6af4fdc21c76e1d16a71198336dc3fb5f81f35f02c694756cdc167c1c023f5c0998f8aa5b99bb031408c3e
 Module: fifo_usage_spy
   Xcui file design/synth_Default_RTL_Group/xcui/fifo_usage_spy.xcui is read
   Checksum value f411d63aec22c7f96d95a15bc2d0c6d2d98aba464cc2037267843bb14c7f7e2cf3b504fac1b6b6e908d99ba9990d83fc74cc61f9b79ae3069333d367ed1ad762
@@ -30,6 +33,9 @@ Module: rom
   Xcui file design/synth_Default_RTL_Group/xcui/rom.xcui is read
   Memory rom_zMem zmem rom.zmem
   Checksum value 262a1880914468ad8928787067426c61fa81422791753db27e93c047fafae50b6a5469405b196b86bb0c60584a9a917c5bb9df7be072ae74b96c8f193f9d34d9
+Module: stb
+  Xcui file design/synth_Default_RTL_Group/xcui/stb.xcui is read
+  Checksum value 36cb3a64813338c862c4cc73aa8a6b47d5fba995e4845d4198ac24bd3513f367573334166b99145f7c2a7c6e842f1345453c5fb7a1dbf5de5d30040e6b3aecb6
 Module: top
   Xcui file design/synth_Default_RTL_Group/xcui/top.xcui is read
   Checksum value 8ef2714cec5fcc1b1f054a56a7f02f3fe3c363b03870652a6bf3db92aa7d49cde6036ee007b27fa2e1ff380deb64f2f2b7f2f949164e71573709b8c81e3882ea

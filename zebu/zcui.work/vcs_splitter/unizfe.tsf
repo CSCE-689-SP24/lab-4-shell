@@ -45,13 +45,13 @@
 top
 wave
 76
-CDC_JOINED_DC=ops4.engr.tamu.edu
+CDC_JOINED_DC=ops3.engr.tamu.edu
 CDC_JOINED_DOMAIN=engr.tamu.edu
 CDC_JOINED_SITE=TAMU
 CDC_JOINED_ZONE=CN=Linux-Server-Resources,CN=CoE-Wide,CN=Global,CN=Zones,OU=Centrify,OU=Services,DC=engr,DC=tamu,DC=edu
 CDC_LOCALHOST=csce-quinn-s1.engr.tamu.edu
 CDC_PREW2KHOST=csce-quinn-s1
-DA_SESSION_ID_AUTH=c73a6a4d-090b-3442-aeec-96f3986e4a2c
+DA_SESSION_ID_AUTH=ee1a1c95-bdd2-9040-8a25-2f6681566cd0
 DMTCP_PLUGIN=/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/lib/libthreadmalloc.so:/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/lib/libpthread_join.so
 HISTCONTROL=ignoredups
 HISTFILESIZE=10000
@@ -76,13 +76,13 @@ SELINUX_USE_CURRENT_RANGE=
 SNPS_SIM_BC_CONFIG_FILE=/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/etc/vcs/synopsys_bc.setup
 SNPS_UTF_ENFORCE_ENABLED_COMMAND=set_perf_flow:ztopbuild
 SNPS_VCS_ATE_DISABLE_TCL_INTERNAL_=1
-SNPS_VCS_INTERNAL_CURR_PID=22797
-SNPS_VCS_INTERNAL_ROOT_PID=22797
-SNPS_VCS_INTERNAL_ROOT_START_TIME=1713958475.957899493
+SNPS_VCS_INTERNAL_CURR_PID=1706
+SNPS_VCS_INTERNAL_ROOT_PID=1706
+SNPS_VCS_INTERNAL_ROOT_START_TIME=1714597197.203840843
 SNPS_VCS_INTERNAL_UTF_TRAN_MODE=1
 SNPS_ZEBU_ADDITIONAL_DEFAULT_COMMANDS=/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/etc/utf/default_commands.utf
-SSH_CLIENT=172.31.60.114 55474 22
-SSH_CONNECTION=172.31.60.114 55474 10.125.204.21 22
+SSH_CLIENT=172.31.5.19 56630 22
+SSH_CONNECTION=172.31.5.19 56630 10.125.204.21 22
 SSH_TTY=/dev/pts/2
 TCLLIBPATH=/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/tcl
 TCL_LIBRARY=/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/tcl/tcl8.6
@@ -103,9 +103,9 @@ VCS_MX_HOME_INTERNAL=1
 VERDI_HOME=/opt/coe/synopsys/verdi/Q-2020.03-SP2-12
 VMR_MODE_FLAG=64
 XDG_RUNTIME_DIR=/run/user/421004447
-XDG_SESSION_ID=2756
+XDG_SESSION_ID=2960
 XILINX_LOCAL_USER_DATA=no
-ZCUI_MESSAGES_CONFIG=task=vcs_splitter_VCS_Task_Builder|pid=22588|index=0|tcphost=csce-quinn-s1.engr.tamu.edu|tcpport=5200|retry=10|delay=500|blocking=1|nmap=0
+ZCUI_MESSAGES_CONFIG=task=vcs_splitter_VCS_Task_Builder|pid=1481|index=0|tcphost=csce-quinn-s1.engr.tamu.edu|tcpport=5200|retry=10|delay=500|blocking=1|nmap=0
 ZEBU_AURA_FW_HOME=/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/aura/fw
 ZEBU_AURA_SW_HOME=/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/aura/sw
 ZEBU_DRIVER_PATH=/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/drivers

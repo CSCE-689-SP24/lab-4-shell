@@ -12,11 +12,11 @@
  OK input backend_default/zPar_cmds.tcl same checksum <- Backend: default backend/System Compilation/Analyze System Building Results
  OK input backend_default/edif/top.edf.gz same date <- Backend: default backend/System Compilation/Analyze System Building Results
  OK input backend_default/zPar_target_conf.tcl same checksum <- Backend: default backend/System Compilation/Analyze System Building Results
- OK input backend_default/./tools/zRTB_FE/dut_io_zpar.edf.gz same date <- Backend: default backend/System Compilation/RTB Front-End
  OK input backend_default/work.Part_0//./edif/top.edf.gz same date <- Backend: default backend/System Compilation/zCore Compilation/Analyze zCore Building Results Part_0
  OK input backend_default/work.Part_0//./edif/U0_M0.edf.gz same date <- Backend: default backend/System Compilation/zCore Compilation/Analyze zCore Building Results Part_0
  OK input backend_default/work.Part_0//./zPar_core_conf.tcl same checksum <- Backend: default backend/System Compilation/zCore Compilation/Analyze zCore Building Results Part_0
  OK input backend_default/work.Part_0//./zPar_cmds.tcl same checksum <- Backend: default backend/System Compilation/zCore Compilation/Analyze zCore Building Results Part_0
+ OK input backend_default/./tools/zRTB_FE/dut_io_zpar.edf.gz same date <- Backend: default backend/System Compilation/RTB Front-End
  OK input backend_default/zPar_zCui.tcl same checksum <- Backend: default backend/System Compilation/Pre PAR Script Builder
  OK output backend_default/tools/zPar/zpar.xcui -> Backend: default backend/System Compilation/Analyze zPar result
  OK output backend_default/tools/zTime/zPar_timing.zti -> Backend: default backend/System Compilation/Create Timing DB

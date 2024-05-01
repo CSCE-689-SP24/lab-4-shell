@@ -1,5 +1,5 @@
  OK input backend_default/zTopBuild.tcl same checksum <- Backend: default backend/System Compilation/Prepare Backend Flow
- KO input backend_default/zTopBuild_edif.inf out of date (non equal checksum) <- Backend: default backend/System Compilation/Prepare Backend Flow
+ OK input backend_default/zTopBuild_edif.inf same date <- Backend: default backend/System Compilation/Prepare Backend Flow
  OK input .. same date
  OK input utf_generatefiles/zTopBuild_netlist_config.tcl same checksum
  OK input .. same date
@@ -18,3 +18,11 @@
  OK input internal dependency (structural) <- Backend: default backend/System Compilation/Make optionsdb dump
  OK input design/synth_Default_RTL_Group/zconnectnew.be.script same checksum <- Backend: default backend/System Compilation/Prepare Backend Flow
  OK input internal dependency (structural) <- Final Check/Compilation Profiler (after BackendEntry)
+ OK output internal dependency (always redo) -> Backend: default backend/System Compilation/Analyze System Building Results
+ OK output backend_default/zTopBuild.xcui -> Backend: default backend/System Compilation/Analyze System Building Results
+ OK output internal dependency (redo if redone) -> Final Check/Compilation Profiler (after ZTopBuildAnalyzer)
+ OK output backend_default/tools/zTime/zTopBuild_timing.zti -> Backend: default backend/System Compilation/Create Timing DB
+ OK output backend_default/tools/zDB/zTopBuild_equi.edf.gz -> Backend: default backend/System Data Base/Build Equipotentials
+ OK output backend_default/tools/zDB/zTopBuild_equi.edf.gz -> Backend: default backend/System Data Base/Convert Netlist
+ OK output backend_default/tools/zDB/zTopBuild_equi.edf.gz -> Backend: default backend/System Data Base/zSimuFsdbHeader
+ OK output backend_default/tools/zDB/zTopBuild_equi.edf.gz -> Backend: default backend/System Data Base/Build Accessibility Graphs

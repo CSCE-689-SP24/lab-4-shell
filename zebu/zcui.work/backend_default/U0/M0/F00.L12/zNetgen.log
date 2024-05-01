@@ -22,7 +22,7 @@
 
 # zNetgen design.tcl 
 
-# start time is Wed Apr 24 06:38:45 2024
+# start time is Wed May  1 16:04:05 2024
 
 
 
@@ -30,15 +30,15 @@
 # Build Date : Oct 18 2022 - 00:58:44
 # ---------------------------System Context--------------------------- 
 # Cpu        40 x bogomips - 4604.90 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
-#            Load: 1.22 0.61 0.37 9/665 31625
+#            Load: 1.01 0.48 0.22 5/671 10847
 #            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.108.1.el7.x86_64
-# Memory     Total: 193183 MB Free: 167715 MB
-#            Total Free including cache: 182908 MB
-#            Swap cache: 0 MB Cached space: 15193 MB
+# Memory     Total: 193183 MB Free: 166576 MB
+#            Total Free including cache: 182782 MB
+#            Swap cache: 0 MB Cached space: 16206 MB
 #            Swap space: 4095 MB Free Swap space: 4095 MB
 #            VmSize: 426 MB VmPeak: 426 MB
 # Disk Space Total: 250 GB Available: 240 GB Used: 10 GB
-#            Free inodes: 524111323
+#            Free inodes: 524108357
 # Stack                                Soft Limit           Hard Limit  
 #            Max stack size            8388608              unlimited            bytes     
 # -------------------------------------------------------------------- 
@@ -455,7 +455,7 @@ cluster_split -unitId {0} -moduleId {0} -fpgaName {F00} -virtexType {V7} -fpgaPa
 #   step CLUSTER_SPLIT : Logical FPGA: U0_M0_F0 ; Physical FPGA: U0/M0/F00
 #   step CLUSTER_SPLIT : Target FPGA part: 7vlx2000tff1925(V7) - 4 SLRs
 #   step CLUSTER_SPLIT : FPGA Inter SLR(SLL) Count: 13000 - target cut threshold: 10000
-#   step INIT : Done in     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:4.55       fm:143644 m     vm:1624 m       vm:+0 m     um:1256 m       um:+0 m
+#   step INIT : Done in     elapsed:0.1 s    user:0.1 s      system:0 s     %cpu:190.48       load:5.53       fm:143033 m     vm:1619 m       vm:+0 m     um:1253 m       um:+0 m
 #   step EVALUATE : Starting
 #   step Die-level partitioning : Starting
 #   step PARTITIONING : Adding indivisible blocks
@@ -480,7 +480,7 @@ cluster_split -unitId {0} -moduleId {0} -fpgaName {F00} -virtexType {V7} -fpgaPa
 #   step ZBNF GENERATOR : set memory module 'ram_ZMEM_mem_base' indivisible
 #   step ZBNF GENERATOR : set memory module 'ram_ZMEM_mem' indivisible
 #   step ZBNF GENERATOR : set memory module 'rom_ZMEM_mem' indivisible
-#   step write ZBNF : Done in     elapsed:0.6 s    user:0.5 s      system:0 s      %cpu:83.33       load:5.54       fm:143518 m     vm:1637 m       vm:+3 m     um:1277 m       um:+3 m
+#   step write ZBNF : Done in     elapsed:0.6 s    user:0.5 s      system:0 s      %cpu:80.97       load:5.53       fm:142881 m     vm:1633 m       vm:+3 m     um:1275 m       um:+3 m
 #   step PARTITIONING : Launch partitioning process on netlist 'design'
 #   step ZBLACCMD : exec_buffer /opt/coe/synopsys/zebu/Q-2020.03-SP1-4/bin/zBlockPartitioning tools/zBlockPartitioning/908a3b0f/script.tcl -log tools/zBlockPartitioning/908a3b0f/zBlockPartitioning.log -trace tools/zBlockPartitioning/908a3b0f/zBlockPartitioning_trace.log -work tools/zBlockPartitioning/908a3b0f/ remote_cmd 
 
@@ -507,7 +507,7 @@ cluster_split -unitId {0} -moduleId {0} -fpgaName {F00} -virtexType {V7} -fpgaPa
 
 # /opt/coe/synopsys/zebu/Q-2020.03-SP1-4/bin/zBlockPartitioning tools/zBlockPartitioning/908a3b0f/script.tcl -log tools/zBlockPartitioning/908a3b0f/zBlockPartitioning.log -trace tools/zBlockPartitioning/908a3b0f/zBlockPartitioning_trace.log -work tools/zBlockPartitioning/908a3b0f/ 
 
-# start time is Wed Apr 24 06:39:14 2024
+# start time is Wed May  1 16:04:38 2024
 
 
 
@@ -515,15 +515,15 @@ cluster_split -unitId {0} -moduleId {0} -fpgaName {F00} -virtexType {V7} -fpgaPa
 # Build Date : Oct 18 2022 - 01:00:45
 # ---------------------------System Context--------------------------- 
 # Cpu        40 x bogomips - 4604.90 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
-#            Load: 5.54 1.68 0.73 19/666 33003
+#            Load: 5.53 1.59 0.59 19/672 12230
 #            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.108.1.el7.x86_64
-# Memory     Total: 193183 MB Free: 143258 MB
-#            Total Free including cache: 158480 MB
-#            Swap cache: 0 MB Cached space: 15222 MB
+# Memory     Total: 193183 MB Free: 142593 MB
+#            Total Free including cache: 158820 MB
+#            Swap cache: 0 MB Cached space: 16227 MB
 #            Swap space: 4095 MB Free Swap space: 4095 MB
 #            VmSize: 349 MB VmPeak: 349 MB
 # Disk Space Total: 250 GB Available: 240 GB Used: 10 GB
-#            Free inodes: 524110996
+#            Free inodes: 524108075
 # Stack                                Soft Limit           Hard Limit  
 #            Max stack size            8388608              unlimited            bytes     
 # -------------------------------------------------------------------- 
@@ -662,7 +662,7 @@ defpart {design.socket_00_00_00_08.ClockRegion000SD_40B} {part_SLR3}
 #   step read ZBNF : Starting
 #   step ZBNF READER : reading ZBNF file 'tools/zBlockPartitioning/908a3b0f/netlist.zbnf'
 #   step EDIF LOADER : reading EDIF file '/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/etc/libXilinx.edif.gz'
-#   step read ZBNF : Done in    elapsed:0.17 s   user:0.17 s    system:0.1 s     %cpu:104.20       load:5.54       fm:143096 m      vm:429 m      vm:+19 m      um:142 m      um:+24 m
+#   step read ZBNF : Done in    elapsed:0.18 s   user:0.16 s    system:0.1 s      %cpu:98.55       load:5.53       fm:142310 m      vm:429 m      vm:+19 m      um:142 m      um:+24 m
 #   step zBlockPartitioning : Read zbnf file tools/zBlockPartitioning/908a3b0f/netlist.zbnf
 #   step zBlockPartitioning : Running zBlockPartitioning on 'design'.
 #   step zBlockPartitioning : Check min/max resource values
@@ -726,7 +726,7 @@ defpart {design.socket_00_00_00_08.ClockRegion000SD_40B} {part_SLR3}
 #   step MODELGEN : Number of blocks 52
 #   step MODELGEN : Creating partitioning graph from Block selection using ZVU
 #   step HGraphCSR : Dumping out interco file zNetgen_AC_interco.txt
-#   step MODELGEN : Done in     elapsed:0.9 s    user:0.3 s      system:0 s      %cpu:33.15       load:5.54       fm:143056 m      vm:432 m       vm:+2 m      um:145 m       um:+2 m
+#   step MODELGEN : Done in     elapsed:0.7 s    user:0.3 s      system:0 s      %cpu:43.80       load:5.53       fm:142255 m      vm:432 m       vm:+2 m      um:145 m       um:+2 m
 #   step zBlockPartitioning : Do partitioning
 #   step Partitioner : Starting
 #   step Partitioner : Grouping bus structures, FWC and QiWC cells with their drivers
@@ -799,23 +799,23 @@ defpart {design.socket_00_00_00_08.ClockRegion000SD_40B} {part_SLR3}
 # +---------+---------+---------+---------+
 # |  SUM CUT|      155|        3|      158|
 # +---------+---------+---------+---------+
-#   step Partitioner : Done in     elapsed:0.5 s      user:0 s    system:0.1 s      %cpu:20.83       load:5.54       fm:143031 m      vm:572 m     vm:+140 m      um:146 m       um:+1 m
+#   step Partitioner : Done in     elapsed:0.3 s      user:0 s    system:0.1 s      %cpu:31.01       load:5.53       fm:142232 m      vm:540 m     vm:+108 m      um:146 m       um:+1 m
 #   step DAP_OVERFLOW_CHECK : Balancing value 0.00359467
 #   step PARTITIONING : Dump defpart mapping in tools/zBlockPartitioning/908a3b0f/defpart.tcl
 #   step PARTITIONING : Factorizing defpartmap
 
 #   exec summary :   10 warnings,    0 syntax errors,    0 fatal errors,    0 internal errors
-#   exec summary : user 0m0.407s, sys 0m0.124s
-#   exec summary : Total memory: 598608 kB - RSS memory: 149984 kB - Data memory: 304212 kB
+#   exec summary : user 0m0.417s, sys 0m0.128s
+#   exec summary : Total memory: 594504 kB - RSS memory: 150008 kB - Data memory: 300108 kB
 #   exec summary : Successful execution
 
-# end time is Wed Apr 24 06:39:14 2024
+# end time is Wed May  1 16:04:39 2024
 #   step PARTITIONING : Read partitioning results from file 'tools/zBlockPartitioning/908a3b0f/defpart.tcl'
 #   step PARTITIONING : Import partitioning result file 'tools/zBlockPartitioning/908a3b0f/defpart.tcl'
 #   step DAP : Reference partition folder at, tools/zBlockPartitioning.
-#   step Die-level partitioning : Done in       elapsed:1 s   user:0.14 s    system:0.3 s      %cpu:16.89       load:5.54       fm:143098 m     vm:1637 m      vm:+13 m     um:1277 m      um:+21 m
+#   step Die-level partitioning : Done in       elapsed:1 s   user:0.13 s    system:0.3 s      %cpu:16.02       load:5.53       fm:142267 m     vm:1633 m      vm:+14 m     um:1275 m      um:+22 m
 #   step Prepare SplitDB : Starting
-#   step Prepare SplitDB : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:5.54       fm:143077 m     vm:1641 m       vm:+0 m     um:1282 m       um:+0 m
+#   step Prepare SplitDB : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:5.53       fm:142239 m     vm:1637 m       vm:+0 m     um:1279 m       um:+0 m
 #   step Split execution : Starting
 #   step SPLIT : Renaming 'design.part_NoSLR.zmdsplt_10602560206920791149' into 'zpad_srb_addr[0]' to ensure top port and partition ports have consistent names.
 #   step SPLIT : Renaming 'design.part_SLR0.zmdsplt_10602560206920791149' into 'zpad_srb_addr[1]' to ensure top port and partition ports have consistent names.
@@ -835,10 +835,10 @@ defpart {design.socket_00_00_00_08.ClockRegion000SD_40B} {part_SLR3}
 #   step SPLIT : Renaming 'design.part_NoSLR.zmdsplt_9189505894669290729' into 'zpad_srb_addr[15]' to ensure top port and partition ports have consistent names.
 #   step SPLIT : Renaming 'design.part_SLR0.zmdsplt_10732431092059811790' into 'zpad_wc_ip_clk' to ensure top port and partition ports have consistent names.
 #   step READER_REPLICATION : Lonely inter-partition readers replication was disabled.
-#   step Split execution : Done in    elapsed:0.12 s   user:0.11 s    system:0.3 s     %cpu:114.75       load:5.54       fm:143021 m     vm:1650 m       vm:+9 m     um:1292 m      um:+10 m
+#   step Split execution : Done in    elapsed:0.12 s   user:0.12 s    system:0.3 s     %cpu:122.70       load:5.53       fm:142155 m     vm:1651 m      vm:+14 m     um:1292 m      um:+13 m
 #   step Post split SplitDB processing : Starting
 #   step ZDIESPLIT : Reconnect 0 ports for sockets and clean up 0 ports on SLR module
-#   step Post split SplitDB processing : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:5.54       fm:143021 m     vm:1650 m       vm:+0 m     um:1292 m       um:+0 m
+#   step Post split SplitDB processing : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:5.53       fm:142155 m     vm:1651 m       vm:+0 m     um:1292 m       um:+0 m
 #   step DAP PROCESS : Inter-SLR long lines prior to multiplexing:
 ------------|------------|------------|
  SLR0-SLR1  | SLR1-SLR2  | SLR2-SLR3  |
@@ -846,11 +846,11 @@ defpart {design.socket_00_00_00_08.ClockRegion000SD_40B} {part_SLR3}
 ------------|------------|------------|
 
 #   step CLUSTER_SPLIT : Inter-SLR multiplexing not needed on this FPGA: max inter-SLR cut= 0
-#   step EVALUATE : Done in       elapsed:5 s      user:4 s    system:0.8 s      %cpu:83.95       load:5.54       fm:141977 m     vm:1650 m      vm:+26 m     um:1292 m      um:+36 m
+#   step EVALUATE : Done in       elapsed:5 s      user:4 s    system:0.7 s      %cpu:84.32       load:7.17       fm:140621 m     vm:1651 m      vm:+32 m     um:1292 m      um:+39 m
 #   step PROCESS : Starting
 #   step CLUSTER_SPLIT : doSplitNetlist:on ; doPblockConstraints:on ; doTimingAnalysis:off ; doMDTMXinsertion:off ; doFilterOpt:off
 #   step Prepare SplitDB : Starting
-#   step Prepare SplitDB : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:5.54       fm:141976 m     vm:1650 m       vm:+0 m     um:1292 m       um:+0 m
+#   step Prepare SplitDB : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:7.17       fm:140620 m     vm:1651 m       vm:+0 m     um:1292 m       um:+0 m
 #   step Split execution : Starting
 #   step SPLIT : Renaming 'design.part_NoSLR.zmdsplt_10602560206920791149' into 'zpad_srb_addr[0]' to ensure top port and partition ports have consistent names.
 #   step SPLIT : Renaming 'design.part_SLR0.zmdsplt_10602560206920791149' into 'zpad_srb_addr[1]' to ensure top port and partition ports have consistent names.
@@ -870,12 +870,12 @@ defpart {design.socket_00_00_00_08.ClockRegion000SD_40B} {part_SLR3}
 #   step SPLIT : Renaming 'design.part_NoSLR.zmdsplt_9189505894669290729' into 'zpad_srb_addr[15]' to ensure top port and partition ports have consistent names.
 #   step SPLIT : Renaming 'design.part_SLR0.zmdsplt_10732431092059811790' into 'zpad_wc_ip_clk' to ensure top port and partition ports have consistent names.
 #   step READER_REPLICATION : Lonely inter-partition readers replication was disabled.
-#   step Split execution : Done in    elapsed:0.11 s   user:0.13 s    system:0.5 s     %cpu:159.65       load:6.54       fm:141954 m     vm:1650 m       vm:+0 m     um:1292 m       um:+0 m
+#   step Split execution : Done in    elapsed:0.11 s   user:0.13 s    system:0.4 s     %cpu:146.55       load:7.17       fm:140566 m     vm:1651 m       vm:+0 m     um:1292 m       um:+0 m
 #   step Post split SplitDB processing : Starting
 #   step ZDIESPLIT : Reconnect 0 ports for sockets and clean up 0 ports on SLR module
-#   step Post split SplitDB processing : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:6.54       fm:141954 m     vm:1650 m       vm:+0 m     um:1292 m       um:+0 m
-#   step PROCESS : Done in    elapsed:0.12 s   user:0.13 s    system:0.5 s     %cpu:142.01       load:6.54       fm:141948 m     vm:1650 m       vm:+0 m     um:1292 m       um:+0 m
-#   step CLUSTER_SPLIT : Done in       elapsed:5 s      user:4 s   system:0.13 s      %cpu:85.27       load:6.54       fm:141948 m     vm:1650 m      vm:+26 m     um:1292 m      um:+36 m
+#   step Post split SplitDB processing : Done in       elapsed:0 s      user:0 s      system:0 s       %cpu:0.00       load:7.17       fm:140566 m     vm:1651 m       vm:+0 m     um:1292 m       um:+0 m
+#   step PROCESS : Done in    elapsed:0.13 s   user:0.14 s    system:0.4 s     %cpu:137.40       load:7.17       fm:140563 m     vm:1651 m       vm:+0 m     um:1292 m       um:+0 m
+#   step CLUSTER_SPLIT : Done in       elapsed:5 s      user:4 s   system:0.11 s      %cpu:85.72       load:7.17       fm:140563 m     vm:1651 m      vm:+32 m     um:1292 m      um:+39 m
 end_quiet_timer {cluster_split}
 begin_quiet_timer {zstatistics_opt}
 fwc {zcg_compositeClock} -optimize {area} -version {gen2} -sampling_frequency {50000} -unit {0} -module {0} -fpga {F0} -clockport {design.U0_M0_F0.zcg_compositeClock} -fwfile {zse_hw_zPar.edf.gz} -forceTopName {top} -originalDesignPath {U0_M0_F0.U0_M0_F0_core} -sabrefwfile {undefined_fx_pas_lib.edf.gz} -isOrionpp {0} -is_dap -zstatistics -process {post}
@@ -1119,7 +1119,7 @@ extract_fpga_timing_informations -stop_timing_attribute_file {vivadoStopTiming.t
 #   step Update paths : Successfully renamed file 'zFpga_timing_paths.tcl' as 'zFpga_timing_paths.tcl_original'
 #   step Update paths : Write file 'zFpga_timing_paths.tcl'
 #   step SANITY CHECK : Starting
-#   step SANITY CHECK : Done in     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00      load:10.54       fm:160403 m     vm:2143 m       vm:+0 m     um:1775 m       um:+0 m
+#   step SANITY CHECK : Done in     elapsed:0.1 s      user:0 s      system:0 s       %cpu:0.00       load:9.97       fm:161216 m     vm:2144 m       vm:+0 m     um:1772 m       um:+0 m
 end_quiet_timer {extract_information}
 end_zmetrics
 end_quiet_timer {znetgen_fpga}
@@ -1127,8 +1127,8 @@ mudb_editor -save
 --> 4762 advanced commands were hidden.
 
 #   exec summary :    9 warnings,    0 syntax errors,    0 fatal errors,    0 internal errors
-#   exec summary : user 0m51.970s, sys 0m1.338s
-#   exec summary : Total memory: 2194644 kB - RSS memory: 1817764 kB - Data memory: 1826096 kB
+#   exec summary : user 0m52.468s, sys 0m1.274s
+#   exec summary : Total memory: 2195668 kB - RSS memory: 1815260 kB - Data memory: 1827120 kB
 #   exec summary : Successful execution
 
-# end time is Wed Apr 24 06:39:58 2024
+# end time is Wed May  1 16:05:23 2024

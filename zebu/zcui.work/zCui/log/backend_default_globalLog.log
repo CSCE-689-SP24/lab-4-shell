@@ -24,11 +24,11 @@ View: Compile profile
   Compilation Summary
       Last session wall clock times:
           FE     : 28s
-          BE     : 10min 26s
-          Total  : 10min 54s
+          BE     : 10min 27s
+          Total  : 10min 55s
       
       All sessions cumulative compile times:
-          without delay  : 12min 30s
+          without delay  : 12min 33s
           with delay*    : 12min 42s
       
       *including slot and grid delays, difference with total wall clock time could be NFS wait or internal flow handling delays
@@ -71,8 +71,6 @@ View: Compile profile
       Columns :
        - elapsed time   : the time for the task being spawed and released
        - execution time : the time for the task being executed
-    Top 10 Synthesis Bundles
-      ^TABLE(tools/zCui/globalProfilerTable.xml,top_ten_synth,DDD)Top 10 Synthesis Bundles^TABLE-
     Back-end Stages
       Back End Stages Timing for backend_default
       ^TABLE(tools/zCui/globalProfilerTable.xml,back_end_stages,DHH)Back-end Stages^TABLE-

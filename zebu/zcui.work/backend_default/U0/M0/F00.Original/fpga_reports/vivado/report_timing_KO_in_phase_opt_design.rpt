@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1_EP06_159265 (lin64) Build 0 Fri Oct 11 16:37:07 PDT 2019
-| Date         : Wed Apr 24 06:38:30 2024
+| Date         : Wed May  1 16:03:45 2024
 | Host         : csce-quinn-s1.engr.tamu.edu running 64-bit Red Hat Enterprise Linux Server release 7.9 (Maipo)
 | Command      : report_timing -delay_type min_max -unique_pins -max_paths 2 -file ./fpga_reports/vivado/report_timing_KO_in_phase_opt_design.rpt
 | Design       : fx_top

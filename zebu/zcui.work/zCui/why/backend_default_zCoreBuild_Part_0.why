@@ -1,3 +1,5 @@
- OK input backend_default/work.Part_0//zCoreBuild_ztb.tcl same checksum <- Backend: default backend/System Compilation/Analyze System Building Results
- KO input backend_default/work.Part_0//top.hash out of date (non equal checksum) <- Backend: default backend/System Compilation/Analyze System Building Results
- OK input backend_default/work.Part_0//../zPar_target_conf.tcl same checksum <- Backend: default backend/System Compilation/Analyze System Building Results
+ OK input backend_default/work.Part_0//zCoreBuild_ztb.tcl same date <- Backend: default backend/System Compilation/Analyze System Building Results
+ OK input backend_default/work.Part_0//top.hash same date <- Backend: default backend/System Compilation/Analyze System Building Results
+ OK input backend_default/work.Part_0//../zPar_target_conf.tcl same date <- Backend: default backend/System Compilation/Analyze System Building Results
+ OK output internal dependency (always redo) -> Backend: default backend/System Compilation/Save Clustering Results
+ OK output backend_default/work.Part_0//zCoreBuild.xcui -> Backend: default backend/System Compilation/zCore Compilation/Analyze zCore Building Results Part_0

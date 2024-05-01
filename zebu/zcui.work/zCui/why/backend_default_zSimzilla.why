@@ -1,2 +1,3 @@
  OK input internal dependency (structural) <- Backend: default backend/System Data Base/Convert Netlist
- KO input backend_default/tools/zDB/zTopBuild_equi.edf.gz out of date (non equal checksum) <- Backend: default backend/System Data Base/Convert Netlist
+ OK input backend_default/tools/zDB/zTopBuild_equi.edf.gz same date <- Backend: default backend/System Data Base/Convert Netlist
+ OK output internal dependency (structural) -> Final Check/Backend Checker : default

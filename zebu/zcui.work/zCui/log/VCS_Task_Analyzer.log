@@ -16,13 +16,14 @@ Reading and assigning contexts (2/10)
    Number of premices contexts 60
 Evaluating synthesis (3/10)
    Synthesis incrementability is enabled
-   Cache statistics 33 hits on 48 calls
+   Cache statistics 33 hits on 36 calls
    Number of unrealizable synthesis 0
-   Number of synthesis to be redone 2
-   Number of stable synthesis 10
+   Number of synthesis to be redone 0
+   Number of stable synthesis 12
 Making synthesis bundles (4/10)
    Size method: 23
-Number of regular stable synthesis: 10
-Number of regular synthesis to be redone: 1
+Number of regular stable synthesis: 12
+Number of regular synthesis to be redone: 0
 File ./zCui/why/design_Default_RTL_Group_Synthesis_Result.why written
    Making dummy stable bundle task
+Task executed in 3s

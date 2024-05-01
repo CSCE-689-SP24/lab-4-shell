@@ -7,8 +7,8 @@ Computing EDIF dependencies
     Edif-file list file open
     Number of edif files removed since the last compilation: 0
     Number of missing edif files: 0
-    Number of changed edif files: 2
-    Number of unchanged edif files: 13
+    Number of changed edif files: 0
+    Number of unchanged edif files: 15
 Creating archive directories
     Directory tools created
     Directory zCui created

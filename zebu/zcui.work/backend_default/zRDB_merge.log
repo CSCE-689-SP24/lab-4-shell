@@ -22,7 +22,7 @@
 
 # zRDB -merge -script zDB_final_zcui.tcl 
 
-# start time is Wed Apr 24 06:45:15 2024
+# start time is Wed May  1 16:10:37 2024
 
 
 
@@ -30,15 +30,15 @@
 # Build Date : Oct 18 2022 - 01:00:11
 # ---------------------------System Context--------------------------- 
 # Cpu        40 x bogomips - 4604.90 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
-#            Load: 0.96 4.47 2.79 2/474 10224
+#            Load: 1.02 4.64 2.80 1/480 30014
 #            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.108.1.el7.x86_64
-# Memory     Total: 193183 MB Free: 172485 MB
-#            Total Free including cache: 187746 MB
-#            Swap cache: 0 MB Cached space: 15261 MB
+# Memory     Total: 193183 MB Free: 171416 MB
+#            Total Free including cache: 187682 MB
+#            Swap cache: 0 MB Cached space: 16266 MB
 #            Swap space: 4095 MB Free Swap space: 4095 MB
 #            VmSize: 353 MB VmPeak: 353 MB
 # Disk Space Total: 250 GB Available: 240 GB Used: 10 GB
-#            Free inodes: 524111471
+#            Free inodes: 524108518
 # Stack                                Soft Limit           Hard Limit  
 #            Max stack size            8388608              unlimited            bytes     
 # -------------------------------------------------------------------- 
@@ -248,12 +248,12 @@ merge_db
 #   step AnoDB : 0 signals anotated, 0 memories added, 0 removed ZceiMessagePorts added.
 #   step Annotation DB : Closing file 'work.Part_0/zCoreBuild_equi.inf'
 #   step MERGE : Completed task 'ImportConstants' in 0 seconds
-#   exec summary : Total memory: 1072076 kB - RSS memory: 339228 kB - Data memory: 789952 kB
+#   exec summary : Total memory: 1129476 kB - RSS memory: 317700 kB - Data memory: 847352 kB
 #   step POWER : No power domain needs to be copied
-#   exec summary : Total memory: 1072076 kB - RSS memory: 339228 kB - Data memory: 789952 kB
+#   exec summary : Total memory: 1129476 kB - RSS memory: 317700 kB - Data memory: 847352 kB
 #   step MERGE : Starting task 'EquiConsolidation'
 #   step MERGE : Completed task 'EquiConsolidation' in 0 seconds
-#   exec summary : Total memory: 1072076 kB - RSS memory: 339228 kB - Data memory: 789952 kB
+#   exec summary : Total memory: 1129476 kB - RSS memory: 317700 kB - Data memory: 847352 kB
 #   step FILE : Opening file 'zDB_Controller.cui' in read mode
 #   step FPGA : Merging 'U0/M0/F08' - start
 #   step FPGA : Trying SAC format.
@@ -279,8 +279,8 @@ merge_db
 #   step FWC : Loaded in 0 seconds'
 #   step FPGA : Consolidation of 1912 modified equis
 #   step FPGA : Consolidation completed in 0 seconds.
-#   step FPGA : Merging 'U0/M0/F08' - done in 0 sec
-#   exec summary : Total memory: 1169740 kB - RSS memory: 345640 kB - Data memory: 887616 kB
+#   step FPGA : Merging 'U0/M0/F08' - done in 1 sec
+#   exec summary : Total memory: 1227140 kB - RSS memory: 324108 kB - Data memory: 945016 kB
 #   step FPGA : Merging 'U0/M0/IF' - start
 #   step FPGA : Trying SAC format.
 #   step Merge : Merging 'U0/M0/IF'
@@ -303,5 +303,5 @@ merge_db
 #   step FPGA : Consolidation of 9876 modified equis
 #   step FPGA : Consolidation completed in 0 seconds.
 #   step FPGA : Merging 'U0/M0/IF' - done in 0 sec
-#   exec summary : Total memory: 1169740 kB - RSS memory: 345664 kB - Data memory: 887616 kB
+#   exec summary : Total memory: 1227140 kB - RSS memory: 324132 kB - Data memory: 945016 kB
 ### fatal error in FPGA FAILURE [RDB0497F] : Stopping merge due to to FPGA compilation failure for 'U0/M0/F00'

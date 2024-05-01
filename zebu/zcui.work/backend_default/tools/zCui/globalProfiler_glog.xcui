@@ -10,11 +10,11 @@
 <h1>Compilation Summary</h1>
 <p>Last session wall clock times:</p>
 <p>    FE     : 28s</p>
-<p>    BE     : 10min 26s</p>
-<p>    Total  : 10min 54s</p>
+<p>    BE     : 10min 27s</p>
+<p>    Total  : 10min 55s</p>
 <p></p>
 <p>All sessions cumulative compile times:</p>
-<p>    without delay  : 12min 30s</p>
+<p>    without delay  : 12min 33s</p>
 <p>    with delay*    : 12min 42s</p>
 <p></p>
 <p>*including slot and grid delays, difference with total wall clock time could be NFS wait or internal flow handling delays
@@ -57,8 +57,6 @@
 <p>Columns :</p>
 <p> - elapsed time   : the time for the task being spawed and released</p>
 <p> - execution time : the time for the task being executed</p>
-<h2>Top 10 Synthesis Bundles</h2>
-<p>^TABLE(tools/zCui/globalProfilerTable.xml,top_ten_synth,DDD)Top 10 Synthesis Bundles^TABLE-</p>
 <h2>Back-end Stages</h2>
 <p>Back End Stages Timing for backend_default</p>
 <p>^TABLE(tools/zCui/globalProfilerTable.xml,back_end_stages,DHH)Back-end Stages^TABLE-</p>

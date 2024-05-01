@@ -35,7 +35,7 @@ ZEBU_XIL_VIVADO_P4=/opt/coe/synopsys/zebu/Q-2020.03-SP1-4/vivado_p4/
 Host name is csce-quinn-s1.engr.tamu.edu
 Fpga compilation directory : /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/backend_default/U0/M0/F00.Original
 
-Make process id 24128
+Make process id 2713
 ------[ CPU info (40 cores) ]-----------------------------
 processor	: 0
 vendor_id	: GenuineIntel
@@ -44,7 +44,7 @@ model		: 63
 model name	: Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
 stepping	: 2
 microcode	: 0x49
-cpu MHz		: 2660.498
+cpu MHz		: 2757.922
 cache size	: 25600 KB
 physical id	: 0
 siblings	: 20
@@ -62,56 +62,56 @@ clflush size	: 64
 cache_alignment	: 64
 address sizes	: 46 bits physical, 48 bits virtual
 ------[ top (51 lines) ]---------------------------------
-top - 06:35:31 up 90 days, 21:34,  2 users,  load average: 0.74, 0.27, 0.23
-Tasks: 433 total,   1 running, 432 sleeping,   0 stopped,   0 zombie
-%Cpu(s):  0.5 us,  1.1 sy,  0.0 ni, 98.0 id,  0.5 wa,  0.0 hi,  0.0 si,  0.0 st
-KiB Mem : 19781961+total, 17682804+free,  3962460 used, 17029108 buff/cache
-KiB Swap:  4194300 total,  4194300 free,        0 used. 19181350+avail Mem 
+top - 16:00:48 up 98 days,  7:00,  2 users,  load average: 0.19, 0.07, 0.06
+Tasks: 428 total,   1 running, 427 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.3 us,  0.9 sy,  0.0 ni, 98.8 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem : 19781961+total, 17579529+free,  3918660 used, 18105672 buff/cache
+KiB Swap:  4194300 total,  4194300 free,        0 used. 19174268+avail Mem 
 
   PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
- 1206 root      20   0  871456 332376  87708 S  26.3  0.2   1785:40 esensor
-24188 davidke+  20   0  164672   2604   1668 R  15.8  0.0   0:00.05 top
-    9 root      20   0       0      0      0 S   5.3  0.0  39:41.14 rcu_sched
-24114 davidke+  20   0  383956  97688  19328 D   5.3  0.0   0:00.13 zTime
-    1 root      20   0  202308   7240   4228 S   0.0  0.0  44:26.88 systemd
-    2 root      20   0       0      0      0 S   0.0  0.0   0:03.20 kthreadd
+ 1206 root      20   0  871456 347012  87708 S  11.1  0.2   1884:56 esensor
+ 2776 davidke+  20   0  164668   2584   1668 R  11.1  0.0   0:00.04 top
+ 1897 root      20   0  388688 226700   9800 S   5.6  0.1  65:28.83 adclient
+    1 root      20   0  202308   7244   4232 S   0.0  0.0  48:09.77 systemd
+    2 root      20   0       0      0      0 S   0.0  0.0   0:03.44 kthreadd
     4 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:+
-    6 root      20   0       0      0      0 S   0.0  0.0   0:19.19 ksoftirqd/0
-    7 root      rt   0       0      0      0 S   0.0  0.0   0:01.30 migration/0
+    6 root      20   0       0      0      0 S   0.0  0.0   0:23.72 ksoftirqd/0
+    7 root      rt   0       0      0      0 S   0.0  0.0   0:01.33 migration/0
     8 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh
+    9 root      20   0       0      0      0 S   0.0  0.0  42:26.71 rcu_sched
    10 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 lru-add-dr+
-   11 root      rt   0       0      0      0 S   0.0  0.0   0:15.89 watchdog/0
-   12 root      rt   0       0      0      0 S   0.0  0.0   0:17.07 watchdog/1
-   13 root      rt   0       0      0      0 S   0.0  0.0   0:01.16 migration/1
-   14 root      20   0       0      0      0 S   0.0  0.0   0:01.19 ksoftirqd/1
+   11 root      rt   0       0      0      0 S   0.0  0.0   0:17.16 watchdog/0
+   12 root      rt   0       0      0      0 S   0.0  0.0   0:18.45 watchdog/1
+   13 root      rt   0       0      0      0 S   0.0  0.0   0:01.22 migration/1
+   14 root      20   0       0      0      0 S   0.0  0.0   0:01.24 ksoftirqd/1
    16 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/1:+
-   18 root      rt   0       0      0      0 S   0.0  0.0   0:14.60 watchdog/2
-   19 root      rt   0       0      0      0 S   0.0  0.0   0:01.37 migration/2
-   20 root      20   0       0      0      0 S   0.0  0.0   0:02.02 ksoftirqd/2
+   18 root      rt   0       0      0      0 S   0.0  0.0   0:15.78 watchdog/2
+   19 root      rt   0       0      0      0 S   0.0  0.0   0:01.41 migration/2
+   20 root      20   0       0      0      0 S   0.0  0.0   0:02.06 ksoftirqd/2
    22 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/2:+
-   24 root      rt   0       0      0      0 S   0.0  0.0   0:16.16 watchdog/3
-   25 root      rt   0       0      0      0 S   0.0  0.0   0:01.15 migration/3
-   26 root      20   0       0      0      0 S   0.0  0.0   0:01.03 ksoftirqd/3
+   24 root      rt   0       0      0      0 S   0.0  0.0   0:17.52 watchdog/3
+   25 root      rt   0       0      0      0 S   0.0  0.0   0:01.19 migration/3
+   26 root      20   0       0      0      0 S   0.0  0.0   0:01.11 ksoftirqd/3
    28 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/3:+
-   29 root      rt   0       0      0      0 S   0.0  0.0   0:14.55 watchdog/4
-   30 root      rt   0       0      0      0 S   0.0  0.0   0:01.62 migration/4
-   31 root      20   0       0      0      0 S   0.0  0.0   0:01.38 ksoftirqd/4
+   29 root      rt   0       0      0      0 S   0.0  0.0   0:15.72 watchdog/4
+   30 root      rt   0       0      0      0 S   0.0  0.0   0:01.66 migration/4
+   31 root      20   0       0      0      0 S   0.0  0.0   0:01.42 ksoftirqd/4
    33 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/4:+
-   34 root      rt   0       0      0      0 S   0.0  0.0   0:16.18 watchdog/5
-   35 root      rt   0       0      0      0 S   0.0  0.0   0:01.24 migration/5
-   36 root      20   0       0      0      0 S   0.0  0.0   0:00.93 ksoftirqd/5
+   34 root      rt   0       0      0      0 S   0.0  0.0   0:17.50 watchdog/5
+   35 root      rt   0       0      0      0 S   0.0  0.0   0:01.31 migration/5
+   36 root      20   0       0      0      0 S   0.0  0.0   0:00.99 ksoftirqd/5
    38 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/5:+
-   39 root      rt   0       0      0      0 S   0.0  0.0   0:14.20 watchdog/6
-   40 root      rt   0       0      0      0 S   0.0  0.0   0:01.43 migration/6
-   41 root      20   0       0      0      0 S   0.0  0.0   0:14.90 ksoftirqd/6
+   39 root      rt   0       0      0      0 S   0.0  0.0   0:15.36 watchdog/6
+   40 root      rt   0       0      0      0 S   0.0  0.0   0:01.46 migration/6
+   41 root      20   0       0      0      0 S   0.0  0.0   0:14.92 ksoftirqd/6
    43 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/6:+
-   44 root      rt   0       0      0      0 S   0.0  0.0   0:15.95 watchdog/7
-   45 root      rt   0       0      0      0 S   0.0  0.0   0:00.98 migration/7
-   46 root      20   0       0      0      0 S   0.0  0.0   0:00.83 ksoftirqd/7
+   44 root      rt   0       0      0      0 S   0.0  0.0   0:17.25 watchdog/7
+   45 root      rt   0       0      0      0 S   0.0  0.0   0:01.04 migration/7
+   46 root      20   0       0      0      0 S   0.0  0.0   0:00.89 ksoftirqd/7
    48 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/7:+
-   49 root      rt   0       0      0      0 S   0.0  0.0   0:14.40 watchdog/8
-   50 root      rt   0       0      0      0 S   0.0  0.0   0:01.16 migration/8
-   51 root      20   0       0      0      0 S   0.0  0.0   0:09.66 ksoftirqd/8
+   49 root      rt   0       0      0      0 S   0.0  0.0   0:15.58 watchdog/8
+   50 root      rt   0       0      0      0 S   0.0  0.0   0:01.19 migration/8
+   51 root      20   0       0      0      0 S   0.0  0.0   0:09.79 ksoftirqd/8
    53 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/8:+
 ----------------------------------------------------------------
 
@@ -130,7 +130,7 @@ touch zNetgen_property.db
 ################################################################################
 ##                                 STEP ZNETGEN                               ##
 ################################################################################
-znetgen start time: 1713958535
+znetgen start time: 1714597253
 if ! [ -e znetgen_skipped.info ]; then START_TIME=$(date +%s) ; time  zNetgen design.tcl  && touch design_zlcr.zdc ; END_TIME=$(date +%s) ; ZFILENAME=xdlRename.log; if ( [ -f $ZFILENAME ] ) && ! gzip -t $ZFILENAME &> /dev/null; then gzip -f $ZFILENAME; mv ${ZFILENAME}.gz $ZFILENAME; fi; mv xdlRename.log ./fpga_reports/zNetgen/xdlRename.log.gz ; echo "`date +%s` `date +%X`     |=> zNetgen: $(( ($END_TIME - $START_TIME ) /60 )) mins" >> fpga_info.log ; fi
 
                                     ZeBu (R)
@@ -156,7 +156,7 @@ if ! [ -e znetgen_skipped.info ]; then START_TIME=$(date +%s) ; time  zNetgen de
 
 # zNetgen design.tcl 
 
-# start time is Wed Apr 24 06:35:35 2024
+# start time is Wed May  1 16:00:53 2024
 
 
 
@@ -164,15 +164,15 @@ if ! [ -e znetgen_skipped.info ]; then START_TIME=$(date +%s) ; time  zNetgen de
 # Build Date : Oct 18 2022 - 00:58:44
 # ---------------------------System Context--------------------------- 
 # Cpu        40 x bogomips - 4604.90 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
-#            Load: 0.68 0.27 0.23 2/480 24376
+#            Load: 0.18 0.07 0.06 2/485 2924
 #            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.108.1.el7.x86_64
-# Memory     Total: 193183 MB Free: 172657 MB
-#            Total Free including cache: 187803 MB
-#            Swap cache: 0 MB Cached space: 15146 MB
+# Memory     Total: 193183 MB Free: 171576 MB
+#            Total Free including cache: 187726 MB
+#            Swap cache: 0 MB Cached space: 16150 MB
 #            Swap space: 4095 MB Free Swap space: 4095 MB
 #            VmSize: 426 MB VmPeak: 426 MB
 # Disk Space Total: 250 GB Available: 240 GB Used: 10 GB
-#            Free inodes: 524112030
+#            Free inodes: 524109060
 # Stack                                Soft Limit           Hard Limit  
 #            Max stack size            8388608              unlimited            bytes     
 # -------------------------------------------------------------------- 
@@ -579,16 +579,16 @@ zNetgen_common_pkg has been loaded
 #   step xdlExtract : Extract XDL Names
 
 #   exec summary :    3 warnings,    0 syntax errors,    0 fatal errors,    0 internal errors
-#   exec summary : user 0m28.753s, sys 0m0.982s
-#   exec summary : Total memory: 2189460 kB - RSS memory: 1813008 kB - Data memory: 1820912 kB
+#   exec summary : user 0m28.941s, sys 0m1.143s
+#   exec summary : Total memory: 2189460 kB - RSS memory: 1806356 kB - Data memory: 1820912 kB
 #   exec summary : Successful execution
 
-# end time is Wed Apr 24 06:36:06 2024
+# end time is Wed May  1 16:01:24 2024
 #   step GENERATE_DESIGN_INFO :  design_info.mk file generated
 
-real	0m31.129s
-user	0m28.791s
-sys	0m1.161s
+real	0m31.550s
+user	0m28.974s
+sys	0m1.316s
 
 
 
@@ -613,8 +613,8 @@ Generating sorted XDC file... OK
 
 [INFO] Sorting accomplished succesfully :
 => design.xdc (196 constraints)
-1.14user 2.97system 0:03.70elapsed 111%CPU (0avgtext+0avgdata 1716maxresident)k
-8inputs+432outputs (0major+702790minor)pagefaults 0swaps
+1.16user 2.89system 0:03.67elapsed 110%CPU (0avgtext+0avgdata 1720maxresident)k
+8inputs+432outputs (0major+700867minor)pagefaults 0swaps
 cat: md5sum.txt: No such file or directory
 cat: md5sum.txt: No such file or directory
 /bin/sh: /READ//cache_read_write.sh: No such file or directory
@@ -625,7 +625,7 @@ cat: md5sum.txt: No such file or directory
 ##                              STEP VIVADO                             ##
 ##########################################################################
 # Vivado DCP Temp Dir: tmp_dcp
-vivado start time: 1713958578
+vivado start time: 1714597296
 WARNING: Default location for XILINX_VIVADO_HLS not found: 
 
 ****** Vivado v2019.1_EP06_159265 (64-bit)
@@ -690,7 +690,7 @@ INFO: [Project 1-479] Netlist was created with Vivado 2017.1_AR69152
 INFO: [Project 1-570] Preparing netlist for logic optimization
 Parsing XDC File [/home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/backend_default/U0/M0/F00.Original/no_dont_touch.xdc]
 Finished Parsing XDC File [/home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/backend_default/U0/M0/F00.Original/no_dont_touch.xdc]
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3458.570 ; gain = 0.000 ; free physical = 170725 ; free virtual = 189974
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3458.754 ; gain = 0.000 ; free physical = 169656 ; free virtual = 189910
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 2696 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 68 instances
@@ -718,7 +718,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 
 11 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
 link_design completed successfully
-link_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:14 . Memory (MB): peak = 3458.570 ; gain = 1931.602 ; free physical = 170725 ; free virtual = 189974
+link_design: Time (s): cpu = 00:00:57 ; elapsed = 00:01:09 . Memory (MB): peak = 3458.754 ; gain = 1935.570 ; free physical = 169656 ; free virtual = 189910
 INFO: [Common 17-600] The following parameters have non-default value.
 general.maxThreads, tcl.collectionResultDisplayLimit, tcl.statsThreshold
 [SW_FPGA] - INFO : Link design ended successfully
@@ -736,11 +736,11 @@ Finished Parsing XDC File [/home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-
 #################################################################################
 ##                 VIVADO : STEP NETLIST_ANALYSIS_PREPROCESSING                ##
 #################################################################################
-##  phase:linked_analysis  -  Host: csce-quinn-s1.engr.tamu.edu  -  MemFree: 166 GB  -  LoadAverage (5s|5min|15min / NBcpu): 0.80|0.44|0.30 / 40  MemAvail: 181 GB
+##  phase:linked_analysis  -  Host: csce-quinn-s1.engr.tamu.edu  -  MemFree: 165 GB  -  LoadAverage (5s|5min|15min / NBcpu): 0.77|0.33|0.16 / 40  MemAvail: 180 GB
 
 [SW_FPGA] - INFO : start netlist_analys_preproc phase
-netlist_analys_preproc start time: 1713958662
-netlist_analys_preproc start date: Wed Apr 24 06:37:42 CDT 2024
+netlist_analys_preproc start time: 1714597376
+netlist_analys_preproc start date: Wed May 01 16:02:56 CDT 2024
 
 
 
@@ -889,11 +889,11 @@ wc_ip_top/wrapper/fwc_ip_hs_cluster_32[0]  : count=50818   ioPort=12461
 #################################################################################
 ##                             VIVADO : STEP READ_CONSTRAINTS                  ##
 #################################################################################
-##  phase:constraints  -  Host: csce-quinn-s1.engr.tamu.edu  -  MemFree: 166 GB  -  LoadAverage (5s|5min|15min / NBcpu): 0.83|0.46|0.31 / 40  MemAvail: 181 GB
+##  phase:constraints  -  Host: csce-quinn-s1.engr.tamu.edu  -  MemFree: 165 GB  -  LoadAverage (5s|5min|15min / NBcpu): 0.79|0.35|0.16 / 40  MemAvail: 180 GB
 
 [SW_FPGA] - INFO : start read_constraints phase
-read_constraints start time: 1713958671
-read_constraints start date: Wed Apr 24 06:37:51 CDT 2024
+read_constraints start time: 1714597385
+read_constraints start date: Wed May 01 16:03:05 CDT 2024
 
 [SW_FPGA] - PROC : zVivado_MDTMX_DisableSocketPblock done
 Parsing XDC File [/home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/backend_default/U0/M0/F00.Original/design.xdc]
@@ -927,11 +927,11 @@ Finished Parsing XDC File [/home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-
 #################################################################################
 ##                             VIVADO : STEP OPT_DESIGN                        ##
 #################################################################################
-##  phase:opt  -  Host: csce-quinn-s1.engr.tamu.edu  -  MemFree: 165 GB  -  LoadAverage (5s|5min|15min / NBcpu): 0.75|0.48|0.32 / 40  MemAvail: 180 GB
+##  phase:opt  -  Host: csce-quinn-s1.engr.tamu.edu  -  MemFree: 164 GB  -  LoadAverage (5s|5min|15min / NBcpu): 0.80|0.40|0.19 / 40  MemAvail: 179 GB
 
 [SW_FPGA] - INFO : start opt_design phase
-opt_design start time: 1713958706
-opt_design start date: Wed Apr 24 06:38:26 CDT 2024
+opt_design start time: 1714597421
+opt_design start date: Wed May 01 16:03:41 CDT 2024
 
 [SW_FPGA] - INFO : Vivado opt_design_options [-verbose -retarget -propconst -sweep ]
 Command: opt_design -verbose -retarget -propconst -sweep
@@ -953,15 +953,15 @@ Resolution: Check the status of your licenses in the Vivado License Manager. For
 [SW_FPGA] - ERROR : *************************************************
 [SW_FPGA] - INFO : Generating post timing
 [SW_FPGA] - INFO : Generating post checkpoints
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 4327.324 ; gain = 0.000 ; free physical = 169810 ; free virtual = 189059
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 4326.547 ; gain = 0.000 ; free physical = 168538 ; free virtual = 188792
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
 Writing XDEF routing logical nets.
 Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.08 . Memory (MB): peak = 4372.219 ; gain = 12.883 ; free physical = 169788 ; free virtual = 189042
+Write XDEF Complete: Time (s): cpu = 00:00:00.29 ; elapsed = 00:00:00.11 . Memory (MB): peak = 4371.441 ; gain = 12.883 ; free physical = 168514 ; free virtual = 188772
 INFO: [Common 17-1381] The checkpoint '/home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/backend_default/U0/M0/F00.Original/fpga_reports/vivado/dcp_KO_in_opt_design.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:02:01 ; elapsed = 00:01:57 . Memory (MB): peak = 4624.887 ; gain = 297.562 ; free physical = 151686 ; free virtual = 171049
+write_checkpoint: Time (s): cpu = 00:02:01 ; elapsed = 00:01:55 . Memory (MB): peak = 4609.109 ; gain = 282.562 ; free physical = 155634 ; free virtual = 176001
 
 [SW_FPGA] - ERROR : ***************************************************
 [SW_FPGA] - ERROR : ********* ERROR in opt_design phase  ************
@@ -975,7 +975,7 @@ write_checkpoint: Time (s): cpu = 00:02:01 ; elapsed = 00:01:57 . Memory (MB): p
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1_EP06_159265 (lin64) Build 0 Fri Oct 11 16:37:07 PDT 2019
-| Date         : Wed Apr 24 06:40:30 2024
+| Date         : Wed May  1 16:05:43 2024
 | Host         : csce-quinn-s1.engr.tamu.edu running 64-bit Red Hat Enterprise Linux Server release 7.9 (Maipo)
 | Command      : report_utilization
 | Design       : fx_top
@@ -1263,10 +1263,10 @@ Table of Contents
 
 
 /home/faculty/d/davidkebo/davidkebo/csce689/labs/lab-4-shell/zebu/zcui.work/backend_default/U0/M0/F00.Original
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 24 06:40:30 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed May  1 16:05:43 2024...
 
-real	4m13.039s
-user	4m6.159s
-sys	0m35.889s
+real	4m7.872s
+user	4m2.359s
+sys	0m34.883s
 
 FPGA compilation finished with status 2

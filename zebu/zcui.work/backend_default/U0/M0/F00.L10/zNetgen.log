@@ -22,7 +22,7 @@
 
 # zNetgen design.tcl 
 
-# start time is Wed Apr 24 06:38:45 2024
+# start time is Wed May  1 16:04:04 2024
 
 
 
@@ -30,15 +30,15 @@
 # Build Date : Oct 18 2022 - 00:58:44
 # ---------------------------System Context--------------------------- 
 # Cpu        40 x bogomips - 4604.90 Intel(R) Xeon(R) CPU E5-2650 v3 @ 2.30GHz
-#            Load: 1.22 0.61 0.37 15/665 31620
+#            Load: 1.01 0.48 0.22 16/671 10827
 #            Hostname: csce-quinn-s1.engr.tamu.edu   OS: Linux 3.10.0-1160.108.1.el7.x86_64
-# Memory     Total: 193183 MB Free: 167767 MB
-#            Total Free including cache: 182960 MB
-#            Swap cache: 0 MB Cached space: 15193 MB
+# Memory     Total: 193183 MB Free: 167313 MB
+#            Total Free including cache: 183517 MB
+#            Swap cache: 0 MB Cached space: 16204 MB
 #            Swap space: 4095 MB Free Swap space: 4095 MB
 #            VmSize: 426 MB VmPeak: 426 MB
 # Disk Space Total: 250 GB Available: 240 GB Used: 10 GB
-#            Free inodes: 524111329
+#            Free inodes: 524108392
 # Stack                                Soft Limit           Hard Limit  
 #            Max stack size            8388608              unlimited            bytes     
 # -------------------------------------------------------------------- 
@@ -687,8 +687,8 @@ mudb_editor -save
 --> 4730 advanced commands were hidden.
 
 #   exec summary :    3 warnings,    0 syntax errors,    0 fatal errors,    0 internal errors
-#   exec summary : user 0m33.606s, sys 0m1.205s
-#   exec summary : Total memory: 2189456 kB - RSS memory: 1806372 kB - Data memory: 1820908 kB
+#   exec summary : user 0m33.688s, sys 0m1.257s
+#   exec summary : Total memory: 2189456 kB - RSS memory: 1807036 kB - Data memory: 1820908 kB
 #   exec summary : Successful execution
 
-# end time is Wed Apr 24 06:39:42 2024
+# end time is Wed May  1 16:04:58 2024

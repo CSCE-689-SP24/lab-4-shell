@@ -7,3 +7,4 @@ zTime_fpga target found
   Number Of Dependencies zCoreBuild -> zTime_fpga : 3
 zDB_final target found
   Number Of Dependencies zCoreBuild -> zDB Global : 1
+Task executed in 2s

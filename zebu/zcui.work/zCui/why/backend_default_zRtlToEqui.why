@@ -1,1 +1,5 @@
- KO input backend_default/tools/zDB/zTopBuild_equi.edf.gz out of date (non equal checksum) <- Backend: default backend/System Compilation/Build System
+ OK input backend_default/tools/zDB/zTopBuild_equi.edf.gz same date <- Backend: default backend/System Compilation/Build System
+ OK output internal dependency (structural) -> Backend: default backend/Global DB Controller/Global DB Controller
+ OK output internal dependency (structural) -> Backend: default backend/System Data Base/Simulate Graphs
+ OK output backend_default/tools/zDB/zTopBuild_equi.edf.gz -> Backend: default backend/System Data Base/Simulate Graphs
+ OK output internal dependency (redo if redone) -> Backend: default backend/System Data Base/Build Accessibility Graphs
